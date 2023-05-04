@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Graduation - Zuha Khan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/Zuha.png" type="image/x-icon">
+ 
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .contentSideBar {
+                display: none;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+
+            .words {
+                margin-left: 0;
+            }
+
+            .challengeCards {
+                height: auto
+            }
+
+            .textpadding {
+                padding-right: 10px;
+            }
+            .challengeCardsrightpadding{
+            padding-right: 10px;
+            }
+
+          
+
+        }
+
+
+
+
+        .content {
+            height: auto;
+        }
+
+        .contentSideBar {
+            height: 100%;
+        }
+
+        .statsBar {
+            background: rgb(255, 150, 191);
+            background: linear-gradient(90deg, rgba(255, 150, 191, 1) 0%, rgba(253, 217, 124, 1) 22%, rgba(251, 253, 170, 1) 34%, rgba(193, 240, 178, 1) 55%, rgba(178, 228, 240, 1) 77%, rgba(211, 153, 252, 1) 100%);
+        }
+
+
+
+
+        @media (min-width: 1200px) {
+            .sticky {
+
+                position: sticky;
+                top: 0;
+                padding: 10px;
+            }
+
+        }
+
+        @media screen and (min-width: 701px) {
+            .content {
+                margin-left: 15%;
+
+            }
+
+            .words {
+                margin-left: 100px;
+            }
+
+            .challengeCards {
+                height: 500px;
+            }
+
+            .textpadding {
+                padding-right: 150px;
+            }
+            .challengeCardsrightpadding{
+                padding-right: 100px;
+            }
+
+          
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .personaSlides {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .slideShowImage {
+                max-width: 50%;
+            }
+        }
+
+        th,
+        td {
+            border-right: 1px solid rgb(131, 131, 131);
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+
+
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top" style="z-index: 2;">
+        <div class="w3-bar w3-black w3-card" id="myNavbar">
+            <a href="/index.html" class="w3-bar-item w3-button w3-wide">ZK</a>
+
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="/projects.html" class="w3-bar-item w3-button"><i class="fa fa-fw fa-user-secret"></i>WORK</a>
+                <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+                <a href="/Zuha_Khan_UX_Resume.docx" target="_blank" class="w3-bar-item w3-button"><i
+                        class="fa fa-fw fa-vcard"></i> CV</a>
+
+                <a href="mailto:zuha.khan@nottingham.ac.uk" class="w3-bar-item w3-button"><i class="fa fa-coffee"></i>
+                    CONTACT</a>
+
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="/projects.html" onclick="w3_close()" class="w3-bar-item w3-button"><i
+                class="fa fa-fw fa-user-secret"></i>WORK</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="/Zuha_Khan_UX_Resume.docx" target="_blank" class="w3-bar-item w3-button"><i
+                class="fa fa-fw fa-vcard"></i>
+            CV</a>
+
+        <a href="mailto:zuha.khan@nottingham.ac.uk" onclick="w3_close()" class="w3-bar-item w3-button"><i
+                class="fa fa-coffee"></i>CONTACT</a>
+
+    </nav>
+
+
+
+    <div class="w3-content" style="max-width:1400px"></div>
+
+    <!--Start of Sidebar-->
+
+    <div class="w3-sidebar w3-bar-block w3-border-black w3-padding-16 contentSideBar w3-hide-small"
+        style="width:15%; position: relative; overflow-x: hidden; z-index: 1; margin-top: 50px; height: inherit; background-color: rgb(0,57,137); box-shadow: 0px 10px 10px rgb(76, 76, 76);">
+        <h3 class="w3-bar-item" style="color: #ffffff;">Contents</h3>
+        <a href="#introduction" class="w3-bar-item w3-button" style="color: #ffffff;">Introduction</a>
+        <a href="#problemStatement" class="w3-bar-item w3-button" style="color: #ffffff;">Problem Statement</a>
+        <a href="#goals" class="w3-bar-item w3-button" style="color: #ffffff;">Goals and methodologies</a>
+        <a href="#dataInsights" class="w3-bar-item w3-button" style="color: #ffffff;">Data insights</a>
+        <a href="#competitors" class="w3-bar-item w3-button" style="color: #ffffff;">Competitor research</a>
+        <a href="#interviews" class="w3-bar-item w3-button" style="color: #ffffff;">Interviews</a>
+        <a href="#surveys" class="w3-bar-item w3-button" style="color: #ffffff;">Survey</a>
+        <a href="#personas" class="w3-bar-item w3-button" style="color: #ffffff;">User personas</a>
+        <a href="#feature" class="w3-bar-item w3-button" style="color: #ffffff;">Feature prioritization</a>
+        <a href="#infoArch" class="w3-bar-item w3-button" style="color: #ffffff;">Information architecture</a>
+        <a href="#wireframes" class="w3-bar-item w3-button" style="color: #ffffff;">Wireframes</a>
+        <a href="#ui" class="w3-bar-item w3-button" style="color: #ffffff;">UI</a>
+        <a href="#challenges" class="w3-bar-item w3-button" style="color: #ffffff;">Challenges and learnings</a>
+        <a href="#conclusion" class="w3-bar-item w3-button" style="color: #ffffff;">Conclusion</a>
+    </div>
+
+     <!--End of Sidebar-->
+
+    <!-- Page Content -->
+    <div style="overflow: auto; height: auto;"> <!--Start of the main  div of the page-->
+
+
+       <!--Start of Project heading-->
+        <div class="w3-container w3-white w3-padding content" style="margin-top: 50px; " id="introduction">
+            <h1 class="words"><b>Graduation at University of Nottingham</b></h1>
+            <h4 class="words"><b>Delivering improvements to the navigation and user journey for Graduation 2023
+                    pages.</b></h4>
+
+            <h5 class="words"><b>Client: </b>Marketing team at University of Nottingham</h5>
+            <h5 class="words"><b>Role: </b>I was the co UX/UI Designer on an Agile team comprising of 2 developers and 3
+                product
+                owners. I was responsible for determining the overall design direction of the project, while
+                collaborating with the rest of the team for project management</h5>
+
+        </div>   <!--End of Project heading-->
+
+        <!--Intro picture-->
+        <div class="w3-container w3-center w3-white words">
+            <img src="/graduationUoN/graduationMockup2.png"
+                style="width: 100%; height: auto; max-width: 800px; margin-bottom: 20px;">
+            <br>
+            <br>
+
+        </div>   <!--End of Intro picture-->
+
+
+        <!--Start of section 1-->
+        <div class="w3-container content textpadding " id="problemStatement"
+            style="background-color: #f9f9f9; padding-top: 40px; ">
+            
+            <h2 class="words"><b>Problem Statement</b></h2>
+
+            <div class="introContent words"> <!--Start of intro content-->
+                <p class="w3-left">
+
+                    The marketing team were keen to improve the navigation issues of the Graduation webpages for Summer
+                    graduation 2023.
+                    Some of the main issues included lack of breadcrumbs and a secondary navigation bar that can help
+                    user navigate across
+                    large amounts of information and find what they are searching for. <br>
+                    Students complained that it was hard to find the graduation guide, information relating to gowns and
+                    clearing, clear ceremony schedules and school dinners.
+                    There were also complaints about lack of 'a human element' on the website in terms of video and
+                    photo content. <br><br>
+
+
+                    The main questions we want answers to are: <br>
+
+                <ul>
+                    <li> What are we trying to solve? </li>
+                    <li> Who are the main users of the website? </li>
+                    <li>What information are different user groups trying to find? </li>
+                    <li> Were all the answers available from the website?</li>
+                    <li>
+                        Did students feel supported throughout their entire graduation journey from booking tickets
+                        to the end of the day?
+                    </li>
+                </ul>
+
+                </p>
+
+
+
+                <br>
+
+
+            </div> <!--End of intro content-->
+        </div>  <!--End of section 1-->
+
+
+
+        <!--Start of section 2-->
+        <div class="w3-container content textpadding" id="goals" style="background-color: #ffffff; padding-top: 40px;">
+           
+            <h1 class="words"><b>Research</b></h1>
+
+
+            <div class="introContent words"> <!--Start of intro content-->
+
+                <p class="w3-left w3-row">
+                <div class="w3-col m6">
+                    <h3><b>Goals</b></h3>
+                    Below are the area I'd like to explore during the user research. <br>
+                    I want to understand: <br>
+                    <ul>
+                        <li>What are the key bits of information users want to get out of the website?</li>
+                        <li>The pattern of finding the information</li>
+                        <li>The detail and depth of information the uses are looking for </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="w3-col m6 w3-padding">
+                    <h3><b>Methodologies</b></h3>
+                    <ul>
+                        <li>Interaction and traffic prone areas from heatmaps</li>
+                        <li>1-1 semi structured interviews with students who have recently graduated</li>
+                        <li>Survey responses from students who have recently graduated</li>
+                    </ul>
+
+                </div>
+
+
+                </p>
+
+
+
+                <br>
+                <br>
+
+
+            </div> <!--End of intro content-->
+        </div> <!--End of section 2-->
+
+
+
+       
+       <!--Start of section 3-->
+        <div class="w3-container content textpadding" id="dataInsights"
+            style="background-color: #f9f9f9; padding-top: 40px;">
+        
+            <h2 class="words"><b>Data insights</b></h2>
+
+            <div class="introContent words"> <!--Start of intro content-->
+
+                <p class="w3-left w3-row">
+                <div class="w3-col m5"> <!--Start of column 1-->
+                    <h4><b>Graduation homepage</b></h4>
+
+                    <ul>
+                        <li>The hero banner is very big which means that no information is available above the fold
+                            in the first glance.</li>
+                        <li>Winter'22 graduation recevies most of the clicks on the page,, however the button does
+                            feel lost in the image.</li>
+                        <li>There seems to be very low interaction with your data, which implies users are not
+                            interaacting with this and it does need to be put on the main landing page.</li>
+                        <li>The future graduation dates box is only visible after some scroll.</li>
+                    </ul>
+
+                    <h4><b>Graduation season page</b></h4>
+
+                    <ul>
+                        <li>The hero banner is very big, however the dates are very clear.</li>
+                        <li>All 4 component cards have a very high interaction rate.</li>
+                        <li>There is a repition of "Certificates" and "Your data" component cards on this page which
+                            do not have a high interaction rate.</li>
+
+                    </ul>
+
+                    <h4><b>Before the day</b></h4>
+
+                    <ul>
+                        <li>The hero banner is very big</li>
+                        <li>The secondary nav bar only acts as anchor links to the content on the page</li>
+                        <li>The interaction decreases further down the page which implies that users are not reading
+                            all this content.</li>
+                        <li>Very high interaction with some quick links indicting that these can be pulled out into
+                            CTAs. </li>
+                        <li>We can have more engaging copy for buttons for example, "Find out more and book" can be
+                            changed to "Join the graduation celebration - Book Now!"</li>
+
+                    </ul>
+
+                    <h4><b>On the day</b></h4>
+
+                    <ul>
+                        <li>The hero banner is very big</li>
+                        <li>The secondary nav bar only acts as anchor links to the content on the page</li>
+                        <li> The ceremony schedule is hidden behind tabs which is a crucial element for graduation.
+                            Is there a possibility for users to miss this?</li>
+                        <li>The interaction decreases further down the page which implies that users are not reading
+                            all this content.</li>
+                        <li>Very high interaction with some quick links indicting that these can be pulled out into
+                            CTAs ex graduation brochure </li>
+                        <li>Is this amount of information on the page enough for each heading?</li>
+
+
+                    </ul>
+
+                    <h4><b>Not attending</b></h4>
+
+                    <ul>
+                        <li>The hero banner is very big</li>
+
+                        <li>High interaction with graduating in absentia; can more context be added here about the
+                            same?</li>
+                        <li>Very high interaction with some quick links indicting that these can be pulled out.
+                        </li>
+
+
+
+                    </ul>
+
+                </div> <!--End of column 1-->
+
+                <div class="w3-col m5 "> <!--Start of column 2-->
+                    <p class="w3-right">
+
+                    <div class="w3-content w3-display-container content w3-center w3-left">
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/graduationUoN/heatmaps/Homepage.jpg"
+                                style="width:100%; max-width: 600px; height: auto; max-height: 800px;  min-width: 500px;"
+                                class="slideShowImage">
+                            <div class="w3-display-topleft w3-container w3-padding-16 w3-pink">
+                                Graduation homepage
+                            </div>
+                        </div>
+
+                        <div class="w3-display-container mySlides ">
+                            <img src="/graduationUoN/heatmaps/second.jpg"
+                                style="width:100% ; max-width: 600px; height: auto; max-height: 800px;min-width: 500px;">
+                            <div class="w3-display-topleft w3-container w3-padding-16 w3-pink">
+                                Graduation season page
+                            </div>
+                        </div>
+
+                        <div class="w3-display-container mySlides ">
+                            <img src="/graduationUoN/heatmaps/before.jpg"
+                                style="width:100% ; max-width: 600px; height: auto; max-height: 1200px;min-width: 500px;">
+                            <div class="w3-display-topleft w3-container w3-padding-16 w3-pink">
+                                Before the day
+                            </div>
+                        </div>
+
+                        <div class="w3-display-container mySlides ">
+
+                            <img src="/graduationUoN/heatmaps/on.jpg"
+                                style="width:100% ; max-width: 600px; height: auto; max-height: 1400px;min-width: 500px;">
+                            <div class="w3-display-topleft w3-container w3-padding-16 w3-pink">
+                                On the day
+                            </div>
+                        </div>
+
+                        <div class="w3-display-container mySlides ">
+
+                            <img src="/graduationUoN/heatmaps/notAttending.jpg"
+                                style="width:100% ; max-width: 600px; height: auto; max-height: 800px;min-width: 500px;">
+                            <div class="w3-display-topleft w3-container w3-padding-16 w3-pink">
+                                Not attending
+                            </div>
+                        </div>
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusHeatmapDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusHeatmapDivs(1)">&#10095;</button>
+
+                    </div>
+
+
+                </div> <!--End of column 2-->
+
+                </p>
+
+
+
+            </div> <!--End of intro content-->
+
+
+            </p>
+
+            <br>
+            <br>
+
+
+        </div> <!--End of section 3-->
+
+
+
+
+        <!--Start of section 4-->
+        <div class="w3-container content textpadding" id="competitors"
+            style="background-color: #ffffff; padding-top: 40px; ">
+            <h2 class="words"><b>Competitor research</b></h2><br>
+
+
+            <div class="introContent words"> <!--Start of intro section-->
+                <p class="w3-left">
+
+                <div class="w3-responsive">
+                    <table class="w3-table-all w3-card-4 w3-bordered" style="width: 100%;">
+                        <tr style="height: 75px;">
+                            <th class="w3-black">University</th>
+                            <th class="w3-green">What they do well?</th>
+                            <th class="w3-red ">What can they improve?</th>
+                            <th class="w3-black">How can UoN adapt?</th>
+                        </tr>
+
+                        <tr>
+                            <td>University of Leeds</td>
+                            <td>
+                                <ul>
+                                    <li>Breadcrumbs for easy navigation</li>
+                                    <li>exciting piece of welcome copy on the landing page</li>
+                                    <li>Information sectioned up along with context around each section </li>
+                                    <li>Presenting the user with graduation options is a good way to simplify the
+                                        journey and guide the user in the relevant area of the website</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>No CTA's or hyperlink to navigate to the next page - only on hover do you
+                                        realise you can click through</li>
+                                    <li>Lack of any form of imagery or media - feels boring</li>
+                                    <li>Too much white space in mobile which increases scroll depth</li>
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li>Introducing breadcrumbs in the journey</li>
+                                    <li>Providing more context around the component cards</li>
+                                    <li>Give user the flexibility to choose which area of the website is relevant to
+                                        them</li>
+                                </ul>
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+                            <td>University of Sheffield</td>
+                            <td>
+                                <ul>
+                                    <li>Empathetic messaging above the fold which is exciting and engaging</li>
+                                    <li>Clear click through components</li>
+                                    <li>a very clear secondary navigation bar</li>
+                                    <li>Header image removed on mobile to reduce scroll depth</li>
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li>Even though the secondary nav is present it gets hidden within the hero image
+                                    </li>
+                                    <li>There are alot of different components which makes it difficult to ascertain the
+                                        importance of each</li>
+                                    <li>Lack of navigation on mobile to return back to the main landing page</li>
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li>The creation of a secondary navigation bar ensures that users can find all
+                                        relevant information</li>
+
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>University of Birmingham</td>
+                            <td>
+                                <ul>
+                                    <li>Clear categorization of summer and winter graduations on the main landing page
+                                    </li>
+                                    <li>Relevant quick links at the bottom of the page</li>
+                                    <li>Heading of the section is above the image in the component cards</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Image sizes on the main landing page are different</li>
+                                    <li>There is no context behind each section on the main landing page</li>
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li>Giving the user flexiiblity to choose the graduation season they wish to see
+                                        information on</li>
+                                </ul>
+                            </td>
+
+                        </tr>
+                        <td>Nottingham Trent University</td>
+                        <td>
+                            <ul>
+                                <li>Clear dates and location visible above the fold</li>
+                                <li>Livestream link available on the main ladning page</li>
+                                <li>After you graduate is available on the main landing page</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul>
+                                <li>The visual hierarchy is not good on desktop</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul>
+                                <li>Introducing a page for "After you graduate" so that the entire journey: Before the
+                                    day, On the day and After is tied together</li>
+
+                            </ul>
+                        </td>
+
+                        <tr>
+                            <td>University of East Anglia</td>
+                            <td>
+                                <ul>
+                                    <li>All information feels concise and easily accessible without being overwhelming
+                                    </li>
+                                    <li>Breadcrumbs help in navigation</li>
+                                    <li>Relevant FAQ links</li>
+                                    <li>An exciting banner page for graduation 2022</li>
+
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li>This page feels slightly disjointed- the categories have no content behind them
+                                        so feel confusing- a round up of what your about to click into</li>
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li>The tone of the page should be more exciting especially the landing pages</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+                </p>
+
+
+
+                <br>
+
+
+            </div> <!--End of intro section-->
+        </div> <!--End of section 4-->
+
+
+
+        <!--Start of section 5-->
+        <div class="w3-container content textpadding" id="interviews"
+            style="background-color: #f9f9f9; padding-top: 40px; ">
+            
+            <h2 class="words"><b>Interviews</b></h2>
+
+            <div class="introContent words"> <!--Start of intro section-->
+                <p>The interview questions were created based on the requirements and assumptions of the marketing team
+                    to
+                    uncover the frustrations the users were having with the website. The interview questions can be
+                    accessed
+                    from this document: <a
+                        href="https://docs.google.com/document/d/1pvnPvmHXdfEQbVeR8n5-AxecCE-AjEzt7yiENhHqsNE/edit?usp=sharing"
+                        target="_blank">Click here</a> </p>
+
+                <div class="w3-container w3-center">
+                    <img src="/graduationUoN/interviewResponses.jpg" style="width: 100%; height: 100%; ">
+                    <br>
+                    <br>
+
+                </div>
+
+                <p class="w3-left w3-row"> <!--Start of 1 row-->
+                <div class="w3-col m6 w3-padding"> <!--Start of 1st column-->
+                    <h3><b>Research synopsis</b></h3>
+
+                    <ul>
+                        <li>Most of the participants complined about the lack of information on the web pages and
+                            showcased
+                            frustration on being dependent on emails. Since emails do tend to get lost in the inbox.
+                        </li>
+                        <li>A lot of students also complianed that there wasn't a section for parents such as about the
+                            city
+                            of Nottingham and where to stay etc which highlighted the fact that parents are also a
+                            crucial
+                            user group that we need to consider while building personas.</li>
+
+                    </ul>
+
+
+                </div> <!--End of 1st column-->
+
+                <div class="w3-col m6 w3-padding"> <!--Start of 2nd column-->
+                    <h3><b>Pivot!</b></h3>
+                    The insights gained from user feedback during the research phase have provided valuable direction
+                    for
+                    the redesign of the University of Nottingham's graduation website. The feedback indicates that there
+                    is
+                    a need to improve the user experience by addressing issues such as difficulty in finding information
+                    and
+                    navigating the site. By addressing these concerns, we can minimize frustration for users and provide
+                    a
+                    more efficient and effective platform for accessing graduation-related information.
+
+                </div> <!--End of 2nd column-->
+
+
+                </p> <!--End of 1st row-->
+
+            </div> <!--End of intro section-->
+        </div> <!--End of section 5-->
+
+
+        <!--start of section 6-->
+        <div class="w3-container content textpadding" id="surveys"
+            style="background-color: #ffffff; padding-top: 40px; ">
+            
+            <h2 class="words"><b>Survey</b></h2>
+
+            <div class="introContent words"> <!--Start of intro section-->
+                <p>The survey was sent by the Marketing team to the students who graduated in the Winter 2022 season.
+                    <b>A total of 341 responses were recevied.</b> Some of the key stand out points from the survey
+                    include:
+                </p>
+
+
+
+                <p class="w3-left w3-row"> <!--Start of 1st row-->
+                <div class="w3-col m3 w3-padding"> <!--Start of 1st column-->
+                    <h3><b>Key takeways</b></h3>
+
+                    <ul>
+                        <li>Finding "information" of any kind was a difficult task whether that was related to the
+                            schedule for the day,parking, location etc</li>
+                        <li>Gowns was a big thing people have complained about which can also sit under "Unavailable
+                            information"</li>
+                        <li>Students opted to refer back to emails rather than checking the website for any kind of
+                            information they wanted to find</li>
+
+                    </ul>
+                    <br>
+
+                    <div class="w3-container">
+                        <div class="w3-panel w3-border w3-round-large" style="background-color: #fff0b5;">
+                            <h3><b>Frustrations identified</b></h3>
+
+                            <ul>
+                                <li>Lack of context and information</li>
+                                <li>No gown guide</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div> <!--End of 1st column-->
+
+                <div class="w3-col m9 w3-padding"> <!--Start of 2nd column-->
+                    <div class="w3-container w3-center">
+                        <img src="/graduationUoN/surveyResults.jpg" style="width: 100%; height: 100%; ">
+                        <br>
+                        <br>
+
+                    </div>
+
+                </div> <!--End of 2nd column-->
+
+
+                </p>
+
+            </div> <!--End of intro content-->
+        </div> <!--End of section 6-->
+
+
+        <!--start of section 7-->
+
+        <div class="w3-container content textpadding" id="personas"
+            style="background-color: #f9f9f9; padding-top: 40px; ">
+            
+            <h1 class="words"><b>Define</b></h1>
+            <h2 class="words"><b>User personas</b></h2>
+
+            <div class="introContent words"> <!--Start of intro content-->
+                <p>After compiling all this research onto a miro board and showcasing the findings to the product
+                    owners, I started creating different personas that may use the system and the particular user
+                    scenarios in which these users may encounter using the system. </p>
+
+
+                <div class="w3-content" style="max-width:800px">
+                    <img class="personaSlides" src="/graduationUoN/persona 1.png" style="width:100%">
+                    <img class="personaSlides" src="/graduationUoN/persona2.png" style="width:100%">
+                    <img class="personaSlides" src="/graduationUoN/persona3.png" style="width:100%">
+                    <img class="personaSlides" src="/graduationUoN/persona4.png" style="width:100%">
+                    <img class="personaSlides" src="/graduationUoN/persona5.png" style="width:100%">
+                </div>
+
+                <div class="w3-center">
+                    <div class="w3-section">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                    </div>
+                    <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+                    <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+                    <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+                    <button class="w3-button demo" onclick="currentDiv(4)">4</button>
+                    <button class="w3-button demo" onclick="currentDiv(5)">5</button>
+                </div>
+
+
+
+
+
+            </div> <!--End of intro content-->
+            <br>
+
+        </div> <!--End of section 7-->
+
+
+        <!--Start of section 8-->
+
+        <div class="w3-container content textpadding" id="feature"
+            style="background-color: #ffffff; padding-top: 40px;">
+          
+            <h1 class="words"><b>Ideation</b></h1>
+            <h2 class="words"><b>Feature prioritization</b></h2>
+
+            <div class="introContent words"> <!--Start of intro section-->
+                <p>After realizing what solution would bring the most value for my users, I decided to take it a step
+                    further and brainstorm the ideas for the actual features. I wanted to ensure that the website is
+                    easy to use even on the day of graduation when users may be in a rush to access specific
+                    information.
+                    The research part of this project and conversations with stakeholders provided enough information to
+                    determine which features will bring low vs high value to the user.
+
+                </p>
+
+                <div class="w3-container w3-center">
+                    <img src="/graduationUoN/feature.jpg" style="width: 75%; height: auto; ">
+                    <br>
+                    <br>
+
+                </div>
+
+            </div> <!--End of intro content-->
+            <br>
+ 
+        </div> <!--End of section 8-->
+
+
+
+
+        <!--start of section 9 -->
+        <div class="w3-container content textpadding" id="infoArch"
+            style="background-color: #f9f9f9; padding-top: 40px; ">
+          
+
+            <h2 class="words"><b>Information architecture</b></h2>
+
+            <div class="introContent words"> <!--Start of 1st level intro content-->
+                <p>After realizing what solution would bring the most value for my users, I decided to take it a step
+                    further and brainstorm the ideas for the actual features. I wanted to ensure that the website is
+                    easy to use even on the day of graduation when users may be in a rush to access specific
+                    information.
+                    The research part of this project and conversations with stakeholders provided enough information to
+                    determine which features will bring low vs high value to the user.
+
+
+                </p>
+
+                <p class="w3-left w3-row"> <!--Start of 1st row-->
+                <div class="w3-col m6 "> <!--Start of 1st column-->
+                    <h4><b>Old site structure</b></h4>
+
+
+
+                    <ul>
+                        <li>The old flow does not have the presence of a secondary navigation bar and only has component
+                            cards on the main page</li>
+                        <li>The user may need to guess where the information they are looking for might be sitting</li>
+                        <li>Each of the pages only comprise of quick links that the user out of the journey</li>
+                        <li>Even though the journey is small and concise, it not meeting user expectations</li>
+                    </ul>
+                 
+
+                </div> <!--End of 1st column-->
+
+
+
+
+
+                <div class="w3-col m6 w3-padding"> <!--Start of 2nd column-->
+                    <img src="/graduationUoN/oldflow.jpg" style="width: 100%; height: auto; ">
+                </div> <!--End of second column-->
+            </p> <!--End of 1st row-->
+
+                <h4><b>Proposed journeys</b></h4>
+
+                <div class="introContent"> <!--Start of second level intro content-->
+                    <p>Based on the above findings, we wanted to propose two different journeys the user can opt for to
+                        the stakeholders. Journey one can be classified as the ideal approach whereas journey two can be
+                        considered as a backup approach. <br> <br>
+
+                        <b>Note: Both journeys incorporate the same set of pages but in diferent orders, hence that is
+                            why 50% of the pages in both these journeys are comprising of the same content. </b>
+                        <br>
+                        <br> The main differences in the approaches include:
+                    <ul>
+                        <li>Journey one would not provide any information about previous graduation ceremonies whereas
+                            journey 2 would comprise of a link to the information that was available to the last
+                            graduation season. This was introduced in journey two so that users can develop a sense of
+                            relief that previous graduands relied on the same information and were able to have a
+                            successful graduation experience.</li><br>
+                        <li>Journey 2 would comprise of quick links on the main landing page for main areas of the
+                            website such as "Gowns", "Photography", "Directions for the venue" etc, this was done incase
+                            the user misses to click on the CTA at the top of the page and finds quick links further
+                            down the scroll. </li><br>
+
+                        <li>Journey one would have a more detailed "Before you arrive" page in which the steps are
+                            broken down for the student whereas journey 2 has all the information they need in the form
+                            of text blocks which will house CTAs guiding user the right page.</li><br>
+                        <li>Even though journey 2 housed a separate "Summer graduation" or "Before you arrive" page, the
+                            thought was to have similar information on both pages based on where the user comes from.
+                        </li>
+                    </ul>
+
+
+
+
+                    </p>
+
+                    <div class="w3-container w3-center ">
+                        <img src="/graduationUoN/journey1.jpg" style="width: 100%; height: 100% ">
+                        <br>
+                        <br>
+                        <img src="/graduationUoN/journey2.jpg" style="width: 100%; height: 100% ">
+                        <br>
+                        <br>
+
+                    </div>
+
+                    <div class="w3-container">
+                        <div class="w3-panel w3-border w3-round-large" style="background-color: #fff0b5;">
+                            <h3><b>Stakeholder feedback</b></h3>
+                            <p>Stakeholders went ahead with journey one with some incorporations from journey 2</p>
+
+                            <ul>
+                                <li>Quick links to be picked up from journey 2 and introduced on the main graduation
+                                    landing page</li>
+                                <li>The stakeholders wanted 3 quick links (in the form of buttons) at the bottom of each
+                                    page</li>
+                                <li>They wanted the graduation brochure be present in a downloadable pdf format on the
+                                    seasonal graduation page</li>
+                                <li>Livestream link to be pulled on to the main landing page</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <h4><b>Proposed Secondary navigation</b></h4>
+                    <p class="w3-row">
+                    <div class="w3-col m6 ">
+
+                        <h5><b>Option 1</b></h5>
+
+
+
+                        <ul>
+                            <li>Pulling out the current graduation season as the first link</li>
+                            <li>The future graduation season can be put in more since that will not be highly interacted
+                                with during off season</li>
+                            <li>On the day, Before you arrive and ceremony schedule are priortized</li>
+                            <li>Information relating to gowns and photography can sit under more</li>
+                        </ul>
+                        </p>
+
+
+
+
+                        <div class="w3-container">
+                            <div class="w3-panel w3-border w3-round-xxlarge w3-orange">
+                                <h3><b>Usability concerns</b></h3>
+
+
+                                <ul>
+                                    <li>Users looking for winter graduation may not be able to figure out that it sits
+                                        under more</li>
+                                    <li>Venue, schedule etc are different for each ceremony so should they be grouped
+                                        with their own respective ceremony in the form of a drop down? </li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w3-container">
+                            <div class="w3-panel w3-border w3-round-xxlarge" style="background-color: #fff0b5;">
+                                <h3><b>Stakeholder feedback</b></h3>
+
+
+                                <p>"I'm not sure if this will work, because then those looking for winter may think that
+                                    'schedule, before you arrive, on the day' relates to them too. It also isn't clear
+                                    what would happen in this case when there might be a 'dark period' when no grad info
+                                    is live"</p>
+                            </div>
+                        </div>
+
+                    </div> <!--w3-col ,6 div-->
+
+                    <div class="w3-col m6 w3-padding">
+                        <img src="/graduationUoN/navbar1.jpg" style="width: 100%; height: auto; ">
+                        <br><br>
+                    </div>
+
+
+                    <p class="w3-row">
+                    <div class="w3-col m6 ">
+
+                        <h5><b>Option 2</b></h5>
+                        <p>Grouping both graduations inside one dropdown</p>
+
+                        <div class="w3-container">
+                            <div class="w3-panel w3-border w3-round-xxlarge w3-orange">
+                                <h3><b>Usability concerns</b></h3>
+
+
+
+                                <p>Since the Ceremony schedule, Before you arrive and On the day links will only be
+                                    relevant to the current graduation season, the user may get confused as to which
+                                    graduation season information is accessible via the navigation bar.</p>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="w3-container">
+                            <div class="w3-panel w3-border w3-round-xxlarge" style="background-color: #fff0b5;">
+                                <h3><b>Stakeholder feedback</b></h3>
+
+
+                                <p>"this approach might work better if we remove 'ceremonies schedule' from the top nav
+                                    as
+                                    these will always be different for summer/winter. Then if we also include drop downs
+                                    for
+                                    each of the other sections so users can understand what 'on the day; contains"</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div> <!--w3-col ,6 div-->
+
+                    <div class="w3-col m6 w3-padding">
+
+                        <img src="/graduationUoN/navbar2.jpg" style="width: 100%; height: auto; ">
+
+                    </div>
+
+
+
+                    <p class="w3-row"> <!--Start of row-->
+                    <div class="w3-col m6"> <!--Start of 1st column-->
+                        <br><br><br>
+
+                        <h3><b>THE CHOSEN ONE!</b></h3>
+                        <p>This was the final navigation bar which was chosen by the product owners based on best
+                            usability practices and based on the research evidence gathered</p>
+
+                        <div class="w3-container">
+                            <div class="w3-panel w3-border w3-round-xxlarge w3-light-green">
+                                <h3><b>What's good about it?</b></h3>
+                                <ul>
+                                    <li>Both summer and winter graduations will have their own dropdown menu which will
+                                        provide a list of information that is available for that particular graduation
+                                        season</li>
+                                    <li>Not attending came out as a major interaction point in the highpoints and will
+                                        also be one of the 3 graduation options so its good to provide that information
+                                        to the user in the first glance</li>
+                                    <li>Before you arrive is a page that stays the same regardless of the graduation
+                                        season and contains all important information such as details on registration,
+                                        clearing, gown hiring etc so it would make sense ot have it in the top navß</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                    </div>  <!--End of first column-->
+
+                    <div class="w3-col m6 w3-padding"> <!--Start of second column-->
+                        <br>
+                        <br>
+                        <br>
+
+                        <img src="/graduationUoN/finalNav.png" style="width: 100%; height: auto; ">
+                    </div> <!--End of second column-->
+                    </p> <!--End of row-->
+
+                    
+
+                </div> <!-- end of second introContent div-->
+
+
+            </div> <!--end of main introContent div-->
+
+
+            <br>
+
+        </div> <!--End of section-->
+
+
+
+        <!--Start of section-->
+        <div class="w3-container content textpadding" id="wireframes"
+            style="background-color: #ffffff; padding-top: 40px;">
+          
+            <h1 class="words"><b>Design</b></h1>
+            <h2 class="words"><b>Wireframes</b></h2>
+
+            <div class="introContent words"> <!--Start of intro content-->
+                <p>The first set of wireframes were designed with the mindset of improving the current journey but with
+                    better usability practices such as providing relevant CTAs for each informtion section and making
+                    sure the information is digestible.
+                    We also adopted the quick links section on the landing page.
+
+
+                </p>
+
+                <div class="w3-container">
+                    <div class="w3-panel w3-border w3-round-xxlarge" style="background-color: #fff0b5;">
+                        <h3><b>Points to think upon</b></h3>
+
+
+                        <p>
+                        <ul>
+                            <li>
+                                There is some repitition of information in between the pages which means duplication of
+                                content which may end up confusing the user.
+                            </li>
+                            <li>The journey needs to be broken down further to section the information in a more logical
+                                manner</li>
+                            <li>Important information such as dates and venue should be placed above the fold</li>
+                        </ul>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-center ">
+                    <img src="/graduationUoN/wireframe1.jpg" style="width: 100%; height: auto; ">
+
+
+
+                </div>
+
+                <p>The second set of wireframes incorporated feedback from the stakeholders and broke up each step of
+                    the journey into detailed steps such as:
+                <ul>
+                    <li>Breaking down steps into a checklist</li>
+                    <li>Adding quick links to each page to help user to the next stage of the journey</li>
+                    <li>Creating pdf versions of important and information heavy pages</li>
+                </ul>
+                </p>
+
+                <div class="w3-container w3-center ">
+                    <img src="/graduationUoN/wireframe2.jpg" style="width: 100%; height: auto; ">
+                    <br>
+                    <br>
+
+                </div>
+
+            </div> <!--End of intro content-->
+
+
+
+
+
+        </div> <!--End of section-->
+
+
+        <!--Start of section-->
+        <div class="w3-container content textpadding" id="ui" style="background-color: #f9f9f9; padding-top: 40px;">
+          
+
+            <h2 class="words"><b>UI</b></h2>
+
+            <div class="introContent words"> <!--Start of intro content-->
+                <p>The final UI can be viewed using the following link: <a
+                        href="https://www.figma.com/file/d3gCkm6lWdPU7T5iz5sbzh/Graduation?node-id=339%3A634&t=Y88tckAXwGfiWDab-1"
+                        target="_blank">Click here</a> <br>
+                    <br>
+                    The UI process became very messy and involved a lot of iterations for some of the pages even though
+                    the stakeholders has signed off the wireframes. This was because stakeholders such as the Alumni
+                    team and the wider graduation team were involved later on in the process due to lack of availabiltiy
+                    of time in their calendars.
+
+
+                    This involved: <br>
+                <ul>
+                    <li>Creating an After you graduate page which can promote alumni relations after students leave the
+                        university</li>
+                    <li>Creating an Honorary graduates page so that can be taken out of the printed brochure</li>
+                    <li>Creating a filtered approach to the gowns rather than a tabular approach since there was an
+                        addition of 16 different ribbon colors being introduced for the new graduation season. </li>
+                </ul>
+
+                I am adding the main pages that were iterated below.
+
+                </p>
+
+                <h3><br><br><b>The main graduation landing page</b><br><br></h3>
+
+                <div class="w3-container w3-center ">
+                    <img src="/graduationUoN/landingPage.jpg" style="width: 100%; height: auto; ">
+
+
+
+
+                </div>
+
+                <h3><br><br><b>Before you arrive</b><br><br></h3>
+
+                <div class="w3-container w3-center ">
+                    <img src="/graduationUoN/beforeArrive.jpg" style="width: 100%; height: auto; ">
+
+
+
+                </div>
+
+                <h3><br><br><b>Gowns and hoods</b><br><br></h3>
+
+                <div class="w3-container w3-center ">
+                    <img src="/graduationUoN/gownshoods.jpg" style="width: 100%; height: auto; ">
+
+
+
+                </div>
+
+
+
+
+            </div> <!--End of intro content-->
+
+
+
+
+
+        </div> <!--End of section-->
+
+
+
+        <!--Start of section-->
+        <div class="w3-container content " id="challenges"
+            style="background-color: #ffffff; padding-top: 40px;">
+           
+
+            <h2 class="words"><b>Challenges and learnings <br><br></b></h2>
+
+            <div class="introContent words challengeCardsrightpadding"> <!--Start of intro content-->
+                <div class="w3-row w3-mobile"> <!--Start of row-->
+                    <div class="w3-third w3-card-2">
+
+                        <header class="w3-container" style="margin:16px; background-color: rgb(0,57,137); ">
+                            <h3 style="color: #ffffff;">Stakeholder management</h3>
+                        </header>
+
+                        <div class="w3-container challengeCards" style="margin:16px;  ">
+                            <p>During the initial stages of the project there were 2 primary product owners who were
+                                liasing regarding the requirements of the project. Further down the timeline, a number
+                                of different stakeholders were introduced to us who were contributing in terms of
+                                providing feedback. There was also the case of graduation team working with another UX
+                                team to redesign the registration experience which was not communicated with us until
+                                the later stages which means there was duplication of effort and work.
+                                <br><br>
+                                <b>Learnings:</b> Ensure that all relevant stakeholders are involved in the kick off but
+                                feedback will only be given by the product owners as too many opinions may cause more
+                                harm than good
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="w3-third w3-card-2">
+
+                        <header class="w3-container" style="margin:16px; background-color: rgb(0,57,137); ">
+                            <h3 style="color: #ffffff;">Navigation</h3>
+                        </header>
+
+                        <div class="w3-container challengeCards" style="margin:16px; ">
+                            <p>As UX designers, we need to make sure that all user groups have a good experience with
+                                the website and any edge cases can be handled as well. The secondary navigation bar was
+                                a challenge, especially when it came to convincing stakeholders on how it will work and
+                                how it can support edge cases of scenarios as well. </p>
+                            <br><br>
+                            <b>Learnings:</b> This would have been a good area for usability testing, however timelines
+                            were very tight and dev work alone took 2-3 weeks. Moving forward, projects will be managed
+                            in a way that can allow some time for usability testing with key user groups.
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="w3-third w3-card-2">
+
+                        <header class="w3-container  " style="margin:16px; background-color: rgb(0,57,137); ">
+                            <h3 style="color: #ffffff;">Handling off season graduation </h3>
+                        </header>
+
+                        <div class="w3-container challengeCards" style="margin:16px;">
+                            <p>This was a challenge because the team did want to provide information for future
+                                graduation ceremonies, however we needed to create a journey for a "dark period" as well
+                                i.e, when no information is available for either graduation ceremonies. We also wanted
+                                to make sure that if a user is looking for a future graduation season they are able to
+                                access it easily, hence it was decided to have it in the main nav bar.</p>
+                        </div>
+
+
+
+                    </div>
+
+                </div> <!--End of row-->
+
+                <br><br>
+
+
+
+
+            </div> <!--End of intro content-->
+
+
+
+
+
+
+
+        </div> <!--End of section-->
+
+
+
+        <!--Start of conclusion-->
+
+        <div class="w3-container content textpadding" id="conclusion"
+            style="background-color: #f9f9f9; padding-top: 40px;">
+           
+
+            <h2 class="words"><b>Conclusion</b></h2> 
+
+            <div class="introContent words"> <!--Start of intro section-->
+                <p>Overall this was one of the first large scale end to end projects that I worked on with the
+                    university. I conducted proper 1-1 interviews, did usability testing and analyzed data and heatmaps
+                    to make data driven design decisions.<br>What I would have appreciated is the opportunity to A/B
+                    test
+                    some of the components such as where do users prefer live steam links or is the off season
+                    graduation season getting any form of interaction in the main nav bar. This area of the website will
+                    be evolving continuously so it will be interesting to see if the new journey is being accepted by
+                    users. <br>The primary stakeholder for this project did inform us that graduation queries have come
+                    down by 87% in
+                    2 months or so which is a drastic improvement and shows that users able to find the information they
+                    are looking for. </p><br><br><br>
+
+
+
+
+            </div> <!--End of intro section-->
+
+
+        </div> <!--End of conclusion-->
+
+
+
+        <!--Start of CTA section-->
+        <div class="w3-container content textpadding" id="conclusion"
+            style="background-color: #ffffff; padding-top: 40px; padding-bottom: 100px;">
+
+
+
+            <p class="words "><a href="/projects.html"
+                    class="w3-button w3-left w3-black w3-padding-large w3-xlarge w3-display-inline-block w3-border"><b>View
+                        other projects
+                        » </b> </a>
+
+                <a href="mailto:zuha.khan@nottingham.ac.uk"
+                    class="w3-button w3-right w3-black w3-padding-large w3-xlarge w3-display-inline-block w3-border"><b>Contact
+                        me
+                        » </b> </a>
+
+              
+
+            </p>
+
+
+        </div> <!--End of CTA section-->
+
+    </div> <!--End of the main  div of the page-->
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-64 " style="background-color: #000000; ">
+        <a href="/graduationUoN/graduation.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To
+            the
+            top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="mailto: zuha13k@gmail.com"> <i class="fa fa-envelope-open"
+                    style="font-size:34px; color: #ffffff; margin: 10px;"></i></a>
+
+            <a href="https://www.linkedin.com/in/zuha13k/" target="_blank"><i
+                    style="font-size:35px;color: #ffffff; margin: 10px;" class="fa">&#xf08c;</i></a>
+
+
+            <a href="https://www.github.com/zuha1311" target="_blank"> <i
+                    style="font-size:35px; color: #ffffff; margin: 10px;" class="fa">&#xf09b;</i></a>
+
+        </div>
+        <p style="font-family: 'Poppins',sans-serif; color: #ffffff;">Copyright <i class="fa fa-copyright"
+                style="font-size: 20px;"></i> 2023 <br> All rights reserved to Zuha Khan </p>
+    </footer>
+
+
+    <!--End of footer-->
+
+    <script>
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+        //Heatmaps slides
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        
+        function plusHeatmapDivs(n) { // Next/previous controls
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        
+        //Persona Slides
+        var personaslideIndex = 1;
+        showDivs(personaslideIndex);
+
+        function plusDivs(n) {
+            showDivs(personaslideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(personaslideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("personaSlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { personaslideIndex = 1 }
+            if (n < 1) { personaslideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-indigo", "");
+            }
+            x[personaslideIndex - 1].style.display = "block";
+            dots[personaslideIndex - 1].className += " w3-indigo";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
