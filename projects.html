@@ -37,6 +37,21 @@
             }
 
         }
+
+        @media screen and (max-width: 700px) {
+            .contentPadding {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+
+        @media screen and (min-width: 701px) {
+            .contentPadding {
+                padding-left: 200px;
+                padding-right: 200px;
+
+            }
+        }
     </style>
 </head>
 
@@ -93,7 +108,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-content" style="max-width:1400px"></div>
 
     <!-- Header -->
-    <header class="w3-container  w3-padding-16">
+    <header class="w3-container  w3-padding-16 contentPadding">
         <br> <br>
         <h1><b>Projects</b></h1>
         <p>In every project that I undertake, I find myself embarking on a journey of discovery, growth and
@@ -125,29 +140,33 @@ and is wrapped around the whole page content, except for the footer in this exam
     height: 100px;
     object-fit: cover;-->
 
-    <div class="w3-container" id="team">
+    <div class="w3-container contentPadding" id="team">
 
         <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
+
+
+            <div class="w3-col l4 m6 w3-margin-bottom">
                 <div class="w3-card  w3-white">
 
                     <a href="/graduationUoN/graduation.html" target="_parent" class="w3-hover-opacity">
-                    <img src="/graduationUoN/ graduationMockup.png" alt="Mike"
-                        style="float: left; width: 100%; max-height: 300px; object-fit: contain;"></a>
+                        <img src="/graduationUoN/ graduationMockup.png" alt="Mike"
+                            style="float: left; width: 100%; max-height: 300px; object-fit: contain;"></a>
                     <div class="w3-container  ">
 
-                        <a href="/graduationUoN/graduation.html" target="_parent" class="w3-hover-opacity" style="text-decoration: none;">
-                        <h3>Graduation</h3> </a>
+                        <a href="/graduationUoN/graduation.html" target="_parent" class="w3-hover-opacity"
+                            style="text-decoration: none;">
+                            <h3>Graduation</h3>
+                        </a>
                         <p class="w3-opacity">University of Nottingham</p>
                         <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UX Research</span>
                             <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UX Design</span>
                             <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span>
                         </p>
-                        <br>
+
                         <p>This project comprised of redesigning the graduation website and revisiting the user journey
                             and implementing a better navigation to help users find large amounts of information easily.
                         </p>
-                     
+
                         <p><a href="/graduationUoN/graduation.html" style="text-decoration: none;">
 
                                 <button class="w3-button w3-light-grey w3-block">Read more <i
@@ -155,65 +174,154 @@ and is wrapped around the whole page content, except for the footer in this exam
                     </div>
                 </div>
             </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
 
-                
+
+
+            <div class="w3-col l4 m6 w3-margin-bottom">
+
                 <div class="w3-card w3-white">
-                    <a href="/bloodbank/bloodbank.html" target="_parent" class="w3-hover-opacity" style="text-decoration: none;">
-                    <img src="/bloodbank/bloodbank.png" alt="John"
-                        style="float: left; width: 100%; max-height: 300px; object-fit: contain; "> 
-                    <div class="w3-container">
-                        <h3>BloodLink</h3> </a>
-                        <p class="w3-opacity">Self-initiated project</p>
-                        <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UX Research</span>   
-                            <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span>
-                            <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">App Development</span>
-                            
-                        </p>
-                        <br>
-                        <p>This project comprises of creating a real-time blood donor-locating app to solve the
-                            problem of inaccurate location information in current blood bank applications. </p>
-                            <p><a href="/bloodbank/bloodbank.html" style="text-decoration: none;">
+                    <a href="/bloodbank/bloodbank.html" target="_parent" class="w3-hover-opacity"
+                        style="text-decoration: none;">
+                        <img src="/bloodbank/bloodbank.png" alt="John"
+                            style="float: left; width: 100%; max-height: 300px; object-fit: contain; ">
+                        <div class="w3-container">
+                            <h3>BloodLink</h3>
+                    </a>
+                    <p class="w3-opacity">Self-initiated project</p>
+                    <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UX Research</span>
+                        <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span>
+                        <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">App Development</span>
 
-                                <button class="w3-button w3-light-grey w3-block">Read more <i
-                                        class="fa fa-arrow-right"></i></button></a></p>
-                    </div>
+                    </p>
+
+                    <p>This project comprises of creating a real-time blood donor-locating app to solve the
+                        problem of inaccurate location information in current blood bank applications. </p>
+                    <p><a href="/bloodbank/bloodbank.html" style="text-decoration: none;">
+
+                            <button class="w3-button w3-light-grey w3-block">Read more <i
+                                    class="fa fa-arrow-right"></i></button></a></p>
                 </div>
+
             </div>
+        </div>
 
 
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card  w3-white">
-                   
-                    <a href="/money/money.html" target="_parent" class="w3-hover-opacity" style="text-decoration: none;">
+
+
+
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card  w3-white">
+
+                <a href="/money/money.html" target="_parent" class="w3-hover-opacity" style="text-decoration: none;">
                     <img src="/money/moneyBanner.png" alt="Jane"
-                        style="float: left; width: 100%; height: 300px; object-fit:contain; "> 
+                        style="float: left; width: 100%; height: 300px; object-fit:contain; ">
                     <div class="w3-container">
-                        <h3>Money</h3> </a>
-                        <p class="w3-opacity">Self-initiated project</p>
-                        <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span>  </p><br> 
-                        <p>This project was done as part of a Figma training course where I was introduced to the concept of colors, typography, iconography and component creation etc</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Read more <i
-                                    class="fa fa-arrow-right"></i></button></p>
-                    </div>
-                </div>
+                        <h3>Money UI</h3>
+                </a>
+                <p class="w3-opacity">Self-initiated project</p>
+                <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span> </p>
+                <p>This project was done as part of a Figma training course where I was introduced to the concept of
+                    colors, typography, iconography and component creation etc</p>
+                <p><a href="/money/money.html" target="_parent" class="w3-button w3-light-grey w3-block">Read more <i class="fa fa-arrow-right"></i></button></a>
+                </p> 
             </div>
+        </div>
 
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card  w3-white">
-                    <img src="/bloodbank/bloodbank.png" alt="Dan"
-                        style="float: left; width: 100%; height: 500px; object-fit: cover;">
-                    <div class="w3-container">
-                        <h3>Dan Star</h3>
-                        <p class="w3-opacity">Designer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-                            elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Read more <i
-                                    class="fa fa-arrow-right"></i></button></p>
-                    </div>
+    </div> <!--END OF ROW TAG-->
+
+
+
+    <div class="w3-row-padding">
+
+
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card  w3-white">
+
+                <a href="/graduationUoN/graduation.html" target="_parent" class="w3-hover-opacity">
+                    <img src="/graduationUoN/ graduationMockup.png" alt="Mike"
+                        style="float: left; width: 100%; max-height: 300px; object-fit: contain;"></a>
+                <div class="w3-container  ">
+
+                    <a href="/graduationUoN/graduation.html" target="_parent" class="w3-hover-opacity"
+                        style="text-decoration: none;">
+                        <h3>Graduation</h3>
+                    </a>
+                    <p class="w3-opacity">University of Nottingham</p>
+                    <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UX Research</span>
+                        <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UX Design</span>
+                        <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span>
+                    </p>
+
+                    <p>This project comprised of redesigning the graduation website and revisiting the user journey
+                        and implementing a better navigation to help users find large amounts of information easily.
+                    </p>
+
+                    <p><a href="/graduationUoN/graduation.html" style="text-decoration: none;">
+
+                            <button class="w3-button w3-light-grey w3-block">Read more <i
+                                    class="fa fa-arrow-right"></i></button></a></p>
                 </div>
             </div>
         </div>
+
+
+
+        <div class="w3-col l4 m6 w3-margin-bottom">
+
+            <div class="w3-card w3-white">
+                <a href="/bloodbank/bloodbank.html" target="_parent" class="w3-hover-opacity"
+                    style="text-decoration: none;">
+                    <img src="/bloodbank/bloodbank.png" alt="John"
+                        style="float: left; width: 100%; max-height: 300px; object-fit: contain; ">
+                    <div class="w3-container">
+                        <h3>BloodLink</h3>
+                </a>
+                <p class="w3-opacity">Self-initiated project</p>
+                <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UX Research</span>
+                    <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span>
+                    <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">App Development</span>
+
+                </p>
+
+                <p>This project comprises of creating a real-time blood donor-locating app to solve the
+                    problem of inaccurate location information in current blood bank applications. </p>
+                <p><a href="/bloodbank/bloodbank.html" style="text-decoration: none;">
+
+                        <button class="w3-button w3-light-grey w3-block">Read more <i
+                                class="fa fa-arrow-right"></i></button></a></p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card  w3-white">
+
+            <a href="/money/money.html" target="_parent" class="w3-hover-opacity" style="text-decoration: none;">
+                <img src="/money/moneyBanner.png" alt="Jane"
+                    style="float: left; width: 100%; height: 300px; object-fit:contain; ">
+                <div class="w3-container">
+                    <h3>Money UI</h3>
+            </a>
+            <p class="w3-opacity">Self-initiated project</p>
+            <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span> </p>
+            <p>This project was done as part of a Figma training course where I was introduced to the concept of
+                colors, typography, iconography and component creation etc</p>
+            <p><button class="w3-button w3-light-grey w3-block">Read more <i class="fa fa-arrow-right"></i></button>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+    </div> <!--END OF TEAM TAG-->
+
+
+    </div>
     </div>
     <hr>
     <hr>
