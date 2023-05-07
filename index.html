@@ -40,6 +40,21 @@
             }
 
         }
+
+        @media screen and (max-width: 700px) {
+            .contentPadding {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+
+        @media screen and (min-width: 701px) {
+            .contentPadding {
+                padding-left: 100px;
+                padding-right: 100px;
+
+            }
+        }
     </style>
 </head>
 
@@ -52,11 +67,11 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar w3-black w3-card" id="myNavbar">
-            <a href="#home" class="w3-bar-item w3-button w3-wide">ZK</a>
+        <div class="w3-bar w3-white w3-card k w3-black" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide w3-white">ZK</a>
             <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small">
-                <a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-fw fa-user-secret"></i>WORK</a>
+            <div class="w3-right w3-hide-small w3-">
+                <a href="projects.html" class="w3-bar-item w3-button "><i class="fa fa-fw fa-user-secret"></i>WORK</a>
                 <a href="/about.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
                 <a href="/Zuha_Khan_UX_Resume.docx" target="_blank" class="w3-bar-item w3-button"><i
                         class="fa fa-fw fa-vcard"></i> CV</a>
@@ -96,20 +111,34 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-content" style="max-width:1400px"></div>
 
     <!-- Header -->
-    <header class="w3-container w3-center w3-padding-32">
-        <br> <br>
-        <h1><b>ZUHA KHAN</b></h1>
-        <H2>UX/UI Designer in Nottingham, UK</H2>
-        <h4>"Building a world of people centered products, one project at a time"</h4>
+    <header class="w3-container w3-center w3-padding-64 w3-display-container " style="height: 100vh; position: relative;">
 
-        <!-- <p><a href="#about" class="w3-button  w3-padding-large w3-large w3-margin-top w3-hover-opacity-off"
+        <img src="hero.gif" style="height: 100%; width: 100%; object-fit: cover; opacity: 0.45; position: absolute; top: 0; left: 0;">
+       
+
+        <div class="w3-display-middle w3-black w3-padding-64 w3-round-xxlarge" style="padding-left: 64px; padding-right: 64px; opacity: 0.9;">
+            <h1 class="w3-jumbo" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><b>ZUHA KHAN</b></h1>
+            <H2 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">UX/UI Designer in Nottingham, UK</H2>
+            <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">"Building a world of people centered products, one project at a time"</h3>
+
+            <!-- <p><a href="#about" class="w3-button  w3-padding-large w3-large w3-margin-top w3-hover-opacity-off"
                 style="background-color: rgb(248, 218, 251);">Explore my work</a>
         </p> -->
+
+        </div>
+       
+    
+        
+      
+        
+
+
 
     </header>
 
     <!-- Promo Section "Statistics" -->
-    <div class="w3-container w3-row w3-center w3-padding-32 statsBar">
+
+    <div class="w3-container w3-row w3-center w3-padding-32 statsBar w3-diplay-bottommiddle">
         <div class="w3-quarter">
             <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
                     class="fa fa-history"></i><br><b>2+</b></span>
@@ -131,19 +160,22 @@ and is wrapped around the whole page content, except for the footer in this exam
             <br>Hours of user testing and research
         </div>
     </div>
+    
+
     <hr>
 
     <!-- Grid -->
-    <div class="w3-row" id="work">
+    <div class="w3-row contentPadding" id="work">
 
         <!-- Blog entries -->
 
         <div class="w3-col l8 s12">
-            <div class="w3-card-4 w3-margin w3-white">
+            <div class="w3-card-4 w3-margin w3-white  w3-round-large">
 
                 <div class="w3-container w3-half">
 
-                    <a href="/graduationUoN/graduation.html" target="_parent" style="text-decoration: none;" class="w3-hover-opacity">
+                    <a href="/graduationUoN/graduation.html" target="_parent" style="text-decoration: none;"
+                        class="w3-hover-opacity">
                         <h3><b>Graduation at UoN</b></h3>
                     </a>
 
@@ -200,7 +232,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                     </div>
                     <div class="w3-row-padding">
                         <div class="w3-col m8 s12">
-                            <p><button class="w3-button w3-padding-large w3-black w3-hover-light-gray w3-border"><b><a
+                            <p><button class="w3-button w3-padding-large w3-black w3-hover-light-gray w3-border w3-round"><b><a
                                             href="/graduationUoN/graduation.html" style="text-decoration: none;"> Read
                                             more » </a></b></button>
                             </p>
@@ -214,10 +246,11 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
             <hr>
             <!-- Blog entry -->
-            <div class="w3-card-4 w3-margin w3-white">
+            <div class="w3-card-4 w3-margin w3-white w3-round-large">
 
                 <div class="w3-container">
-                    <a href="/bloodbank/bloodbank.html" target="_parent" style="text-decoration: none;" class="w3-hover-opacity">
+                    <a href="/bloodbank/bloodbank.html" target="_parent" style="text-decoration: none;"
+                        class="w3-hover-opacity">
                         <h3><b>BloodLink</b></h3>
                     </a>
                     <h5 style="color: rgba(68, 68, 68, 0.666);">7% increase in monthly blood donations in 3 months</h5>
@@ -267,10 +300,10 @@ and is wrapped around the whole page content, except for the footer in this exam
                     </div>
                     <div class="w3-row-padding">
                         <div class="w3-col m8 s12">
-                            <p><button class="w3-button w3-padding-large w3-black w3-hover-light-gray w3-border"><b><a
-                                href="/bloodbank/bloodbank.html" style="text-decoration: none;"> Read
-                                more » </a></b></button>
-                </p>
+                            <p><button class="w3-button w3-padding-large w3-black w3-hover-light-gray w3-border w3-round"><b><a
+                                            href="/bloodbank/bloodbank.html" style="text-decoration: none;"> Read
+                                            more » </a></b></button>
+                            </p>
                         </div>
 
                     </div>
@@ -281,7 +314,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <hr>
 
             <!-- Blog entry -->
-            <div class="w3-card-4 w3-margin w3-white">
+            <div class="w3-card-4 w3-margin w3-white w3-round-large">
 
                 <div class="w3-container">
                     <h3><b>Coming Together</b></h3>
@@ -329,7 +362,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                     </div>
                     <div class="w3-row-padding">
                         <div class="w3-col m8 s12">
-                            <p><button class="w3-button w3-padding-large w3-black w3-hover-light-gray w3-border"><b>Read
+                            <p><button class="w3-button w3-padding-large w3-black w3-hover-light-gray w3-border w3-round"><b>Read
                                         more »</b></button>
                             </p>
                         </div>
@@ -346,7 +379,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
         <div class="w3-col l4" id="about">
             <!-- About Card -->
-            <div class="w3-card w3-margin w3-margin-top w3-container w3-white">
+            <div class="w3-card w3-margin w3-margin-top w3-container w3-white w3-round-large">
                 <h4><b>About me</b></h4>
                 <img src="/homepageImages/about.jpg" style="width:100%">
                 <div class=" w3-white">
@@ -366,12 +399,12 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                     <p class="words  " style="padding-bottom: 20px; "><a href="/Zuha_Khan_UX_Resume.docx"
                             target="_blank"
-                            class="w3-button w3-left w3-black w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border"><b>Read
+                            class="w3-button w3-left w3-black w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round"><b>Read
                                 my CV
                                 » </b> </a>
 
                         <a href="mailto:zuha.khan@nottingham.ac.uk"
-                            class="w3-button w3-black w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border"><b>Contact
+                            class="w3-button w3-black w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round"><b>Contact
                                 me
                                 » </b> </a>
 
@@ -383,7 +416,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
             <hr>
 
-            <div class="w3-card w3-margin">
+            <div class="w3-card w3-margin w3-round-large">
                 <div class="w3-container w3-padding">
                     <h4>Books I recommend</h4>
                 </div>
