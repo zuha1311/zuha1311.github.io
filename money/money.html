@@ -71,10 +71,7 @@
       height: 100%;
     }
 
-    .statsBar {
-      background: rgb(255, 150, 191);
-      background: linear-gradient(90deg, rgba(255, 150, 191, 1) 0%, rgba(253, 217, 124, 1) 22%, rgba(251, 253, 170, 1) 34%, rgba(193, 240, 178, 1) 55%, rgba(178, 228, 240, 1) 77%, rgba(211, 153, 252, 1) 100%);
-    }
+
 
 
 
@@ -133,10 +130,10 @@
       border-right: 1px solid rgb(131, 131, 131);
     }
 
-    .button{
-            background: #05005b;
-            color: #ffffff;
-        }
+    .button {
+      background: #05005b;
+      color: #ffffff;
+    }
   </style>
 </head>
 
@@ -173,8 +170,8 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-    style="display:none" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block button w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+    id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
       ×</a>
     <a href="/projects.html" onclick="w3_close()" class="w3-bar-item w3-button"><i
@@ -195,20 +192,14 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!--Start of Sidebar-->
 
   <div class="w3-sidebar w3-bar-block w3-border-black w3-padding-16 contentSideBar w3-hide-small"
-    style="width:15%; position: relative; overflow-x: hidden; z-index: 1; margin-top: 50px; height: inherit; background-color: rgb(137, 5, 0); box-shadow: 0px 10px 10px rgb(76, 76, 76);">
+    style="width:15%; position: relative; overflow-x: hidden; z-index: 1; margin-top: 50px; height: inherit; background-color: rgb(127, 0, 173); box-shadow: 0px 10px 10px rgb(76, 76, 76);">
     <h3 class="w3-bar-item" style="color: #ffffff;">Contents</h3>
     <a href="#introduction" class="w3-bar-item w3-button" style="color: #ffffff;">Introduction</a>
-    <a href="#problemStatement" class="w3-bar-item w3-button" style="color: #ffffff;">Problem Statement</a>
-    <a href="#goals" class="w3-bar-item w3-button" style="color: #ffffff;">Goals and methodologies</a>
-    <a href="#dataInsights" class="w3-bar-item w3-button" style="color: #ffffff;">Data insights</a>
-    <a href="#competitors" class="w3-bar-item w3-button" style="color: #ffffff;">Competitor research</a>
-    <a href="#users" class="w3-bar-item w3-button" style="color: #ffffff;">Who are the users?</a>
-    <a href="#personas" class="w3-bar-item w3-button" style="color: #ffffff;">User personas</a>
-
-    <a href="#infoArch" class="w3-bar-item w3-button" style="color: #ffffff;">Information architecture</a>
-    <a href="#wireframes" class="w3-bar-item w3-button" style="color: #ffffff;">Wireframes</a>
+    <a href="#colors" class="w3-bar-item w3-button" style="color: #ffffff;">Colors</a>
+    <a href="#typography" class="w3-bar-item w3-button" style="color: #ffffff;">Typography</a>
+    <a href="#iconography" class="w3-bar-item w3-button" style="color: #ffffff;">Iconography</a>
+    <a href="#logo" class="w3-bar-item w3-button" style="color: #ffffff;">Logo</a>
     <a href="#ui" class="w3-bar-item w3-button" style="color: #ffffff;">UI</a>
-    <a href="#usabilityTesting" class="w3-bar-item w3-button" style="color: #ffffff;">Usability testing</a>
     <a href="#challenges" class="w3-bar-item w3-button" style="color: #ffffff;">Challenges and learnings</a>
     <a href="#conclusion" class="w3-bar-item w3-button" style="color: #ffffff;">Conclusion</a>
   </div>
@@ -222,20 +213,18 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!--Start of Project heading-->
     <div class="w3-container w3-white w3-padding content" style="margin-top: 50px; " id="introduction">
       <h1 class="words"><b>Money</b></h1>
-      <h4 class="words"><b>Creating a blood donor find the gap to shorten the gap between accessibility and availability
-          of blood</b></h4>
+      <h4 class="words"><b>Designed the UI for a mobile wallet application as part of Internshala's UX/UI Design
+          certification </b></h4>
 
-      <h5 class="words"><b>Client: </b>Jawaharlal Nehru Medical College</h5>
-      <h5 class="words"><b>Role: </b>This was the first user centered project I had done as part of my final year
-        dissertation. It has gaps in the process due to the fact I was not aware of a design thinking process at that
-        time. I led the design direction of this project including the development stage while collaborating with 6
-        stakeholders.</h5>
+
+      <h5 class="words"><b>Role: </b>This was the first project where I was exposed to the different elements of UI
+        design, from choosing a color palette to designing reusable components and prototyping .</h5>
 
     </div> <!--End of Project heading-->
 
     <!--Intro picture-->
     <div class="w3-container w3-center w3-white words">
-      <img src="/bloodbank/bloodbank.png" style="width: 100%; height: auto; max-width: 800px; margin-bottom: 20px;">
+      <img src="/money/moneyBanner.png" style="width: 100%; height: auto; max-width: 800px; margin-bottom: 20px;">
       <br>
       <br>
 
@@ -243,52 +232,24 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
     <!--Start of section 1-->
-    <div class="w3-container content textpadding " id="problemStatement"
-      style="background-color: #f9f9f9; padding-top: 40px; ">
+    <div class="w3-container content textpadding " id="colors" style="background-color: #f9f9f9; padding-top: 40px; ">
 
-      <h2 class="words"><b>Problem Statement</b></h2>
+      <h2 class="words"><b>Colors</b></h2>
+
 
       <div class="introContent words"> <!--Start of intro content-->
+        <p>The colors were decided after learning what primary, secondary,, accent, neutral and semantic colors are. I
+          also learnt colors play a role on human psychology and the human mind tends to associate certain set of colors
+          with certain emotions such as blue for trust. Hence, that is the reason I chose blue to be the primary color
+          for
+          this money app. </p>
 
-        <p class="w3-left w3-row"> <!--Start of row-->
-        <div class="w3-col m7"> <!--Start of first column-->
-
-          The current systems allow only the static details of donors to be maintained by blood banks and hospitals.
-          Such systems, provide a list of donors based on their contact location which they provided during
-          registration. In real scenarios, the actual location of the donor could be different than the registered
-          address and the distance from the patient's side. <br>
-
-          The proposed system will help the requester (patient) or hospitals locate nearby donors (volunteers) and
-          forward the request for help. The requester must specify the blood group and the system will find the nearest
-          volunteers having a compatible blood group. The periodic geo-location updates of the volunteer’s mobile device
-          will help the system find the nearest donors quickly. Also, it will ensure the privacy of user data.
-          <br><br>
-
-
-          The main questions we want answers to are: <br>
-
-          <ul>
-            <li> What are we trying to solve? </li>
-            <li> Who are the main users of blood bank applications? </li>
-            <li>What information are different user groups trying to find? </li>
-            <li> What are the problems associated with static blood bank applications?</li>
-            <li>
-              Why are the current systems of blood donation not being utilized to their full potential?
-            </li>
-            <li>How can these problems be solved to ensure the timely donation of blood and create public awareness in
-              both rural and urban India?</li>
-          </ul>
-
-        </div> <!--End of first column-->
-
-        <div class="w3-col m5 w3-padding"> <!--start of second column-->
-          <img src="/bloodbank/thoughtProcessImage.png" style="width: 100%;" height="auto">
-
-        </div> <!--end of second column-->
-
-
-        </p> <!--end of row-->
-
+          <div class="w3-container w3-center">
+            <img src="/money/colors.png" style="width: 100%; height: 100%; ">
+            <br>
+            <br>
+  
+          </div>
 
 
         <br>
@@ -300,45 +261,22 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
     <!--Start of section 2-->
-    <div class="w3-container content textpadding" id="goals" style="background-color: #ffffff; padding-top: 40px;">
+    <div class="w3-container content textpadding" id="typography" style="background-color: #ffffff; padding-top: 40px;">
 
-      <h1 class="words"><b>Research</b></h1>
+      <h2 class="words"><b>Typography</b></h2>
 
 
       <div class="introContent words"> <!--Start of intro content-->
+        <p>The primary font for this project was Montserrat and weight variations of the font were used to distinguish the information as shown in the image below.</p>
 
-        <p class="w3-left w3-row"> <!--Start of row-->
-        <div class="w3-col m6"> <!--Start of first column-->
-          <h3><b>Goals</b></h3>
-          Below are the area I'd like to explore during user research. <br>
-          I want to understand: <br>
-          <ul>
-            <li> How fast should apps process requests of finding a blood donor? </li>
-
-            <li>In which order do users look for information in the case of an emergency?</li>
-            <li> What information is crucial for processing a blood request?</li>
-          </ul>
+          <div class="w3-container w3-center">
+            <img src="/money/Iconography.png" style="width: 100%; height: 100%; ">
+            <br>
+            <br>
+  
+          </div>
 
 
-        </div> <!--End of first column-->
-
-        <div class="w3-col m6 w3-padding"> <!--start of second column-->
-          <h3><b>Methodologies</b></h3>
-          <ul>
-            <li>Reviewing the acceptance and awareness of blood donation data in India</li>
-            <li>Reviewing proposals of systems made by software professionals and medical experts</li>
-            <li>Breaking down the features of current blood bank applications</li>
-
-          </ul>
-
-        </div> <!--end of second column-->
-
-
-        </p> <!--end of row-->
-
-
-
-        <br>
         <br>
 
 
@@ -349,109 +287,24 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
     <!--Start of section 3-->
-    <div class="w3-container content textpadding" id="dataInsights"
+    <div class="w3-container content textpadding" id="iconography"
       style="background-color: #f9f9f9; padding-top: 40px;">
 
-      <h2 class="words"><b>Data insights</b></h2>
+      <h2 class="words"><b>Iconography</b></h2>
 
-      <h3 class="words"><b>What does the stats say?</b></h3>
 
       <div class="introContent words"> <!--Start of intro content-->
+        <p>The primary font for this project was Montserrat and weight variations of the font were used to distinguish the information as shown in the image below.</p>
 
-        <p>
-
-        <div class="w3-container"> <!--Start of notes container-->
-          <div class="w3-panel w3-pale-red w3-leftbar w3-border-red w3-xlarge w3-center">
-            <p> India stares at blood shortage of a whopping 1.95
-              million units annually!</p>
+          <div class="w3-container w3-center">
+            <img src="/money/Iconography.png" style="width: 100%; height: 100%; ">
+            <br>
+            <br>
+  
           </div>
-        </div> <!--end of notes container-->
-
-        <ul>
-          <li> In the past few years, India has seen an improvement in the blood collection from 9.8 million units in
-            2011-12 to 11.45 million units in 2017-18.</li>
-          <li>According to Central Drugs Standard Control Organization (CDSCO), there were 2,760 blood banks in the
-            country
-            in 2015. The assessment exercise identified 2,626 functional blood banks across the country excluding 46
-            military blood banks.
-            <ul>
-              <li>1,131(43%) were supported by National AIDS Control
-                Organization (NACO), Ministry of Health and Family Welfare, Government of India</li>
-              <li>The remaining 1,495 were
-                Non-NACO blood banks.</li>
-            </ul>
-          </li>
-        </ul>
-
 
 
         <br>
-
-        <b>Annual Collection and Voluntary Blood Donation</b><br> <br>
-        During January to December 2015, the annual blood collection from all the blood banks that reported was
-        11,645,791
-        <ul>
-          <li>71.9% (8,378,692) units were through voluntary blood donations</li>
-          <li>28.1% were from replacement donations</li>
-        </ul>
-        The average annual collection of blood units of all the blood banks in the country were
-        4789 units. The average annual collection of NACO supported blood banks was found to be higher than (6,219
-        units) the Non-NACO blood banks (3,583 units). The blood banks with component separation units recorded a
-        higher average collection (7,035 units) compared to blood banks without component separation units (2,432
-        units). The NACO supported Blood banks collected 59.4% (6,915,963 units) of the total collection, of which
-        80.5% (5,568,143) units were through voluntary blood donation. The Non-NACO Blood banks collected 4,729,828
-        (40.5%) units of which only 59.4% (2,810,549) units were through voluntary blood donation.
-        </p>
-        <br>
-
-
-      </div> <!--End of intro content-->
-
-      <h3 class="words"><b>What do the experts say?</b></h3>
-
-      <div class="introContent words"> <!--Start of intro content-->
-
-        <h4><b>The Optimization of Blood Donor Information and Management System by Technopedia by P. Priya and V.
-            Saranya</b></h4>
-        <ul>
-          <li>The writers propose a blood donor information and management system integrated with GIS in an android
-            mobile application. </li>
-          <li>The proposed system provides a needed and valuable service to the health sector by ensuring the quality of
-            blood through a systematic process.</li>
-          <li> The system solves issues such as misinformation of donors, misuse by third parties, and updating blood
-            donation stock that exist in older systems.</li>
-          <li>The proposed system is a web-based android application that reduces human mistakes in the existing system
-            and uses wireless internet for data flow.</li>
-          <li> The system is an integrated framework with a cloud-based application on mobile devices.</li>
-          <li>Future work includes extending the application to process blood requests through SMS services, providing
-            secure BTS to prevent misuse of donor details, and enabling strangers to become the helping hand during
-            emergency situations.</li>
-
-        </ul>
-
-        <h4><b>MBB: A Life Saving Application by Narendra Gupta, Ramakant Gawande and Nikhil Thengadi </b></h4>
-
-        <ul>
-          <li>Proposed system to link all donors</li>
-          <li>System to control blood transfusion service</li>
-          <li>Creation of database to hold data on blood stock in each area</li>
-          <li>Data on donors in each city will be available</li>
-          <li>People can see patients in need of blood supplies through the app</li>
-          <li>Registration as donors available</li>
-          <li>Clients can receive blood donation requests from local donors</li>
-        </ul>
-
-        <h4><b>An Android Application for Volunteer Blood Donors by Sultan Turhan</b></h4>
-        <ul>
-          <li>Proposes a smartphone application for volunteer blood donors to increase willingness and accessibility
-          </li>
-          <li>Application helps healthcare centers provide blood quickly when stocks are insufficient</li>
-          <li>Sends location information of available donors and blood requests to a main system</li>
-          <li>Provides uninterrupted communication between healthcare centers and volunteer donors</li>
-          <li>Optimizes distance calculation to determine donor eligibility based on actual distance</li>
-          <li>Improves system infrastructure by moving to the Grade build automation platform</li>
-        </ul>
-
 
 
       </div> <!--end of intro content-->
@@ -812,7 +665,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-row w3-mobile"> <!--Start of row-->
           <div class="w3-third w3-card-2">
 
-            <header class="w3-container" style="margin:16px; background-color: rgb(137, 5, 0); ">
+            <header class="w3-container" style="margin:16px; background-color: rgb(127, 0, 173); ">
               <h3 style="color: #ffffff;">Understanding the subject </h3>
             </header>
 
@@ -837,7 +690,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
           <div class="w3-third w3-card-2">
 
-            <header class="w3-container" style="margin:16px; background-color: rgb(137, 5, 0); ">
+            <header class="w3-container" style="margin:16px; background-color: rgb(127, 0, 173); ">
               <h3 style="color: #ffffff;">Lack of public awareness</h3>
             </header>
 
@@ -858,7 +711,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
           <div class="w3-third w3-card-2">
 
-            <header class="w3-container  " style="margin:16px; background-color: rgb(137, 5, 0); ">
+            <header class="w3-container  " style="margin:16px; background-color: rgb(127, 0, 173); ">
               <h3 style="color: #ffffff;">Scaling </h3>
             </header>
 
@@ -909,7 +762,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           UI aspect and not properly testing it before launch which meant a lot of crashes and bug fixes.
           <br>Overall the app os doing what is supposed to do with further improvements and changes since it has no been
           handed over to an entire software development team who keep track of the bugs and issues. Journey wise, the
-          app remains mostly the same which is a good sign that people are not having complaints with it. 
+          app remains mostly the same which is a good sign that people are not having complaints with it.
         </p>
         <br><br><br>
 

@@ -47,6 +47,10 @@
                 padding-left: 16px;
                 padding-right: 16px;
             }
+            .bannerPadding {
+                padding: 16px;
+               
+            }
         }
 
         @media screen and (min-width: 701px) {
@@ -54,6 +58,10 @@
                 padding-left: 100px;
                 padding-right: 100px;
 
+            }
+            .bannerPadding {
+                padding: 64px;
+               
             }
         }
 
@@ -101,7 +109,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    <nav class="w3-sidebar w3-bar-block button w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
@@ -120,14 +128,14 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-content" style="max-width:1400px"></div>
 
     <!-- Header -->
-    <header class="w3-container w3-center w3-padding-64 w3-display-container "
+    <header class="w3-container w3-center w3-padding-64 w3-display-container w3-mobile w3-responsive"
         style="height: 100vh; position: relative;">
 
         <img src="hero.gif"
             style="height: 100%; width: 100%; object-fit: cover; opacity: 0.45; position: absolute; top: 0; left: 0;">
 
 
-        <div class="w3-display-middle button w3-padding-64 w3-round-xxlarge"
+        <div class="w3-display-middle button bannerPadding w3-round-xxlarge"
             style="padding-left: 64px; padding-right: 64px; opacity: 0.9; color: #ffffff;">
             <h1 class="w3-jumbo" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                 <b>Zuha Khan </b>
@@ -410,8 +418,9 @@ and is wrapped around the whole page content, except for the footer in this exam
                         am supporting the web team to produce clean, high-functioning digital components for web and
                         mobile platforms.<br> <br>
 
+                   
 
-                    <p class="words  " style="padding-bottom: 20px; "><a href="/Zuha_Khan_UX_Resume.docx"
+                        <p class="words  " style="padding-bottom: 20px; "><a href="/Zuha_Khan_UX_Resume.docx"
                             target="_blank"
                             class="w3-button w3-left button w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round"><b>Read
                                 my CV
@@ -423,6 +432,9 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 » </b> </a>
 
                     </p>
+
+                    
+                   
 
 
 

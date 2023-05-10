@@ -94,7 +94,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    <nav class="w3-sidebar w3-bar-block button w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
@@ -131,15 +131,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <!--Filter code-->
 
-    <div class="w3-container  w3-padding-16 contentPadding">
+    <!-- <div class="w3-container  w3-padding-16 contentPadding">
         <span class="w3-margin-right">Filter:</span>
-        <button class="w3-button button" data-filter="all" onclick="filterCards('all')">ALL</button>
-        <button class="w3-button w3-white" data-filter="ux-research" onclick="filterCards('ux-research')"><i class="	fa fa-address-card-o w3-margin-right"></i>UX Research</button>
-        <button class="w3-button w3-white" data-filter="ux-design" onclick="filterCards('ux-design')"><i class="	fa fa-paint-brush w3-margin-right"></i>UX Design</button>
-        <button class="w3-button w3-white w3-hide-small" data-filter="ui-design" onclick="filterCards('ui-design')"><i class="fa fa-object-ungroup w3-margin-right"></i>UI Design</button>
-        <button class="w3-button w3-white w3-hide-small" data-filter="development" onclick="filterCards('development')"><i class="	fa fa-connectdevelop w3-margin-right"></i>Development</button>
+        <button class="w3-button w3-white ">ALL</button>
+        <button class="w3-button w3-white "><i class="	fa fa-address-card-o w3-margin-right"></i>UX
+            Research</button>
+        <button class="w3-button w3-white "><i class="	fa fa-paint-brush w3-margin-right"></i>UX Design</button>
+        <button class="w3-button w3-white "><i class="fa fa-object-ungroup w3-margin-right"></i>UI Design</button>
+        <button class="w3-button w3-white  "><i class="	fa fa-connectdevelop w3-margin-right"></i>Development</button>
     </div>
-    </div>
+    -->
     <hr>
 
 
@@ -158,7 +159,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                     <a href="/graduationUoN/graduation.html" target="_parent" class="w3-hover-opacity">
                         <img src="/graduationUoN/ graduationMockup.png" alt="Mike"
-                            style="float: left; width: 100%; max-height: 300px; object-fit: contain;"></a>
+                            style="float: left; width: 100%; max-height: 300px; object-fit: cover;"></a>
                     <div class="w3-container  ">
 
                         <a href="/graduationUoN/graduation.html" target="_parent" class="w3-hover-opacity"
@@ -192,7 +193,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                         style="text-decoration: none;">
                         <img src="/bloodbank/bloodbank.png" alt="John"
                             style="float: left; width: 100%; max-height: 300px; object-fit: contain; ">
-                        <div class="w3-container">
+                <div class="w3-container">
                             <h3>BloodLink</h3>
                     </a>
                     <p class="w3-opacity">Self-initiated project</p>
@@ -203,32 +204,29 @@ and is wrapped around the whole page content, except for the footer in this exam
                     </p>
 
                     <p>This project comprises of creating a real-time blood donor-locating app to solve the
-                        problem of inaccurate location information in current blood bank applications. </p>
+                        problem of inaccurate location information in current blood bank applications while maintaining user privacy. </p>
                     <p><a href="/bloodbank/bloodbank.html" style="text-decoration: none;">
 
                             <button class="w3-button w3-light-grey w3-block w3-round">Read more <i
                                     class="fa fa-arrow-right"></i></button></a></p>
+
                 </div>
-
             </div>
+
         </div>
-
-
-
-
 
         <div class="w3-col l4 m6 w3-margin-bottom card" data-categories="ui-design">
             <div class="w3-card  w3-white w3-round-medium">
 
                 <a href="/money/money.html" target="_parent" class="w3-hover-opacity" style="text-decoration: none;">
                     <img src="/money/moneyBanner.png" alt="Jane"
-                        style="float: left; width: 100%; height: 300px; object-fit:contain; ">
+                        style="float: left; width: 100%; height: 300px; object-fit:cover; ">
                     <div class="w3-container">
                         <h3>Money UI</h3>
                 </a>
                 <p class="w3-opacity">Self-initiated project</p>
                 <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span> </p>
-                <p>This project was done as part of a Figma training course where I was introduced to the concept of
+                <p>This project was done as a deliverable for a Figma training course where I was introduced to the concept of
                     colors, typography, iconography and component creation etc</p>
                 <p><a href="/money/money.html" target="_parent" class="w3-button w3-light-grey w3-block w3-round">Read
                         more <i class="fa fa-arrow-right"></i></button></a>
@@ -236,7 +234,11 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
         </div>
 
-    </div> <!--END OF ROW TAG-->
+
+    </div> <!--end of row tag-->
+
+
+    </div> <!--END OF team TAG-->
 
 
 
@@ -301,37 +303,20 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
 
         </div>
-    </div>
+    </div> <!--end of second row padding tag-->
 
 
 
 
 
-    <div class="w3-col l4 m6 w3-margin-bottom card" data-categories="ux-research  ui-design">
-        <div class="w3-card  w3-white w3-round-medium">
 
-            <a href="/money/money.html" target="_parent" class="w3-hover-opacity" style="text-decoration: none;">
-                <img src="/money/moneyBanner.png" alt="Jane"
-                    style="float: left; width: 100%; height: 300px; object-fit:contain; ">
-                <div class="w3-container">
-                    <h3>Money UI</h3>
-            </a>
-            <p class="w3-opacity">Self-initiated project</p>
-            <p> <span class="w3-tag w3-light-grey w3-medium w3-margin-bottom">UI Design</span> </p>
-            <p>This project was done as part of a Figma training course where I was introduced to the concept of
-                colors, typography, iconography and component creation etc</p>
-            <p><button class="w3-button w3-light-grey w3-block">Read more <i class="fa fa-arrow-right"></i></button>
-            </p>
-        </div>
-    </div>
 
     </div>
 
     </div> <!--END OF TEAM TAG-->
 
 
-    </div>
-    </div>
+
     <hr>
     <hr>
     <hr>
@@ -376,26 +361,13 @@ and is wrapped around the whole page content, except for the footer in this exam
         }
     </script>
 
-<script>
-    //filter code
+    <script>
+        //filter code
 
-    function filterCards(category){
-        let cards = document.querySelectorAll('.card');
-        if (category == 'all') {
-            cards.forEach(card => card.style.display = 'block');
-        } else {
-            cards.forEach(card => {
-                if (card.dataset.category == category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-    }
 
-    
-</script>
+
+
+    </script>
 
 
 </body>
