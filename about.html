@@ -60,6 +60,11 @@
             background: #05005b;
             color: #ffffff;
         }
+
+        .navbar {
+            color: #000000;
+            background-color: #ffffff;
+        }
     </style>
 </head>
 
@@ -72,7 +77,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar button w3-card" id="myNavbar">
+        <div class="w3-bar navbar " id="myNavbar">
             <a href="/index.html" class="w3-bar-item w3-button w3-wide">ZK</a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
@@ -95,7 +100,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block button w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    <nav class="w3-sidebar w3-bar-block navbar w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
@@ -113,17 +118,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
 
-    <div class="w3-content contentPadding" style="max-width:1400px"></div>
 
     <!-- Header -->
-    <header class="w3-container  w3-padding-64 contentPadding">
+    <header class="w3-container  w3-padding-64 contentPadding w3-white">
         <br> <br>
         <h1><b>Hello</b> <i class="fa fa-hand-peace-o" aria-hidden="true"></i></h1>
 
 
     </header>
 
-    <div style="overflow: auto; height: auto;" class="contentPadding"> <!--Start of the main  div of the page-->
+    <div style="overflow: auto; height: auto;" class="contentPadding w3-white"> <!--Start of the main  div of the page-->
 
         <div class="introContent words"> <!--Start of intro content-->
 
@@ -210,7 +214,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </i>
 
             </h4>
-
+<br> <br>
 
 
 
@@ -220,8 +224,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     </div> <!--end of the page content div-->
 
-    <br>
-    <br>
+
+    
 
 
 

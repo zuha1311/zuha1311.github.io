@@ -13,6 +13,10 @@
 
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body,
         h1,
         h2,
@@ -27,9 +31,9 @@
         }
 
         .statsBar {
-            background: rgb(0, 171, 116);
-            background: linear-gradient(90deg, rgba(0, 171, 116, 1) 0%, rgba(32, 0, 186, 1) 37%, rgba(77, 100, 255, 1) 73%, rgba(160, 0, 255, 1) 99%);
-            color: #ffffff;
+
+            background: #ffffff;
+            color: black;
         }
 
         @media (min-width: 1200px) {
@@ -42,16 +46,17 @@
 
         }
 
-        @media screen and (max-width: 700px) { 
+        @media screen and (max-width: 700px) {
             .contentPadding {
-                padding-left: 16px; 
+                padding-left: 16px;
                 padding-right: 16px;
             }
+
             .bannerPadding {
                 padding-left: 64px;
                 padding-right: 64px;
-               
-               
+
+
             }
         }
 
@@ -61,9 +66,10 @@
                 padding-right: 100px;
 
             }
+
             .bannerPadding {
                 padding: 64px;
-               
+
             }
         }
 
@@ -75,6 +81,15 @@
         .button {
             background: #05005b;
             color: #ffffff;
+        }
+
+        .nameText {
+            color: #000000;
+        }
+
+        .navbar {
+            color: #000000;
+            background-color: #ffffff;
         }
     </style>
 </head>
@@ -88,7 +103,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar button w3-card" id="myNavbar">
+        <div class="w3-bar navbar " id="myNavbar">
             <a href="#home" class="w3-bar-item w3-button w3-wide w3-white">ZK</a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small w3-">
@@ -111,7 +126,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block button w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    <nav class="w3-sidebar w3-bar-block navbar w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
@@ -130,68 +145,69 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-content" style="max-width:1400px"></div>
 
     <!-- Header -->
-    <header class="w3-container w3-padding-64 w3-display-container w3-mobile w3-responsive"
-        style="height: 100vh; position: relative;">
+    <header class="w3-display-container w3-mobile w3-responsive bannerPadding "
+        style="height: 100vh;  background-color: #ffffff;">
 
-        <img src="hero.gif"
-            style="height: 100%; width: 100%; object-fit: cover; opacity: 0.45; position: absolute; top: 0; left: 0;">
+        <!-- <img src="hero.gif"
+            style="height: 100%; width: 100%; object-fit: cover; opacity: 0.45; position: absolute; top: 0; left: 0;"> -->
 
-
-        <div class="w3-display-middle button bannerPadding w3-round-xxlarge"
-            style=" opacity: 0.9; color: #ffffff;">
-            <h1 class="w3-jumbo" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                <b>Zuha Khan </b>
-            </h1>
-            <H2
-                style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-                UX/UI Designer in Nottingham, UK</H2>
-            <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">"Building a world
-                of people centered products, one project at a time"</h3>
+        <div class="w3-center nameText w3-padding-64 w3-mobile w3-responsive">
+            <h1 class="w3-xxxlarge"> Hey there I'm Zuha,</h1>
+            <h3>
+                a UX/UI Designer for the University of Nottingham<br> aiming to build people centered products one
+                project at a time.
+            </h3>
+            <br>
+            <br>
 
 
+            <!-- Promo Section "Statistics" -->
 
+            <div class=" w3-row w3-center w3-padding-64 statsBar">
+                <div class="w3-quarter">
+                    <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
+                            class="fa fa-history"></i><br><b>2+</b></span>
+                    <br>Years of UX experience
+                </div>
+                <div class="w3-quarter">
+                    <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
+                            class="fa fa-calendar-check-o"></i><br><b>10+</b></span>
+                    <br>Successfully completed UX projects
+                </div>
+                <div class="w3-quarter">
+                    <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
+                            class="fa fa-thumbs-o-up"></i><br><b>30+</b></span>
+                    <br>Happy stakeholders
+                </div>
+                <div class="w3-quarter">
+                    <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
+                            class="fa fa-pencil-square-o"></i><br><b>100+</b></span>
+                    <br>Hours of user testing and research
+                </div>
+            </div>
 
-
-            <!-- <p><a href="#about" class="w3-button  w3-padding-large w3-large w3-margin-top w3-hover-opacity-off"
-                style="background-color: rgb(248, 218, 251);">Explore my work</a>
-        </p> -->
+            <br>
+            <h5 class="w3-xlarge w3-hover-opacity"><a href="#work">
+                    Check out my work below <i class="fa fa-angle-double-down" aria-hidden="true"></i></a></h5>
 
         </div>
+
+
+
+
 
 
 
     </header>
 
-    <!-- Promo Section "Statistics" -->
-
-    <div class="w3-container w3-row w3-center w3-padding-32 statsBar w3-diplay-bottommiddle">
-        <div class="w3-quarter">
-            <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
-                    class="fa fa-history"></i><br><b>2+</b></span>
-            <br>Years of UX experience
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
-                    class="fa fa-calendar-check-o"></i><br><b>10+</b></span>
-            <br>Successfully completed UX projects
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
-                    class="fa fa-thumbs-o-up"></i><br><b>30+</b></span>
-            <br>Happy stakeholders
-        </div>
-        <div class="w3-quarter">
-            <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
-                    class="fa fa-pencil-square-o"></i><br><b>100+</b></span>
-            <br>Hours of user testing and research
-        </div>
-    </div>
 
 
-    <hr>
+
+
+
 
     <!-- Grid -->
-    <div class="w3-row contentPadding" id="work">
+    <div class="w3-row contentPadding" id="work" style="background: #ffffff;">
 
         <!-- Blog entries -->
 
@@ -347,7 +363,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div class="w3-card-4 w3-margin w3-white w3-round-large">
 
                 <div class="w3-container">
-                    <h3><b>Coming Together</b></h3>
+                    <h3><b><a href="/comingTogether/comingTogether.html" style="text-decoration: none;" target="_parent"  class="w3-hover-opacity"> Coming Together</a></b></h3>
                     <h5 style="color: rgba(68, 68, 68, 0.666);">12% increase in MAU</h5>
 
                 </div>
@@ -385,16 +401,16 @@ and is wrapped around the whole page content, except for the footer in this exam
                         </p>
                     </div>
 
-                    <div class="w3-container w3-half w3-center">
+                    <div class="w3-container w3-half w3-center"> <a href="/comingTogether/comingTogether.html" style="text-decoration: none;" target="_parent"  class="w3-hover-opacity"> 
                         <img src="/comingTogether/ctbanner.png" alt="Nature"
-                            style="width:100%;  ;height:auto; padding: 20px;">
+                            style="width:100%;  ;height:auto; padding: 20px;"> </a>
 
                     </div>
                     <div class="w3-row-padding">
                         <div class="w3-col m8 s12">
-                            <p><button
+                            <p> <a href="/comingTogether/comingTogether.html" style="text-decoration: none;" target="_parent"  class="w3-hover-opacity"> <button
                                     class="w3-button w3-padding-large button w3-hover-light-gray w3-border w3-round"><b>Read
-                                        more »</b></button>
+                                        more »</b></button> </a>
                             </p>
                         </div>
 
@@ -420,9 +436,9 @@ and is wrapped around the whole page content, except for the footer in this exam
                         am supporting the web team to produce clean, high-functioning digital components for web and
                         mobile platforms.<br> <br>
 
-                   
 
-                        <p class="words  " style="padding-bottom: 20px; "><a href="/Zuha_Khan_UX_Resume.docx"
+
+                    <p class="words  " style="padding-bottom: 20px; "><a href="/Zuha_Khan_UX_Resume.docx"
                             target="_blank"
                             class="w3-button w3-left button w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round"><b>Read
                                 my CV
@@ -435,8 +451,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                     </p>
 
-                    
-                   
+
+
 
 
 
