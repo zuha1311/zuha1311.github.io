@@ -68,7 +68,7 @@
             height: 100%;
         }
 
-      
+
 
 
 
@@ -89,7 +89,7 @@
             }
 
             .words {
-                margin-left: 100px;
+                margin-left: 75px;
             }
 
             .challengeCards {
@@ -128,7 +128,7 @@
             border-right: 1px solid rgb(131, 131, 131);
         }
 
-        .button{
+        .button {
             background: #aeaeae;
             color: black;
         }
@@ -162,6 +162,40 @@
             .challengeCardsrightpadding {
                 padding-right: 15px;
             }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+            .contentSideBar {
+                display: block;
+
+            }
+
+            .content {
+                margin-left: 15%;
+
+            }
+
+            .words {
+                margin-left: 35px;
+            }
+
+            .challengeCards {
+                height: auto;
+            }
+
+            .textpadding {
+                padding-right: 15px;
+            }
+
+            .challengeCardsrightpadding {
+                padding-right: 15px;
+            }
+
+
+
+
+
         }
     </style>
 </head>
@@ -222,7 +256,8 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!--Start of Sidebar-->
 
     <div class="w3-sidebar w3-bar-block w3-border-black w3-padding-16 contentSideBar w3-hide-small "
-        style="width:15%; position: relative; overflow-x: hidden; z-index: 1; margin-top:50px;height: inherit; background-color: rgb(0,57,137); box-shadow: 0px 10px 10px rgb(76, 76, 76);">
+        style="width:15%; position: relative; overflow-x: hidden; z-index: 1; margin-top:50px;height: inherit; background-color: rgb(0,57,137); box-shadow: 0px 10px 10px rgb(76, 76, 76);"
+        id="sidebar">
         <h3 class="w3-bar-item" style="color: #ffffff;">Contents</h3>
         <a href="#introduction" class="w3-bar-item w3-button" style="color: #ffffff;">Introduction</a>
         <a href="#problemStatement" class="w3-bar-item w3-button" style="color: #ffffff;">Problem Statement</a>
@@ -345,16 +380,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                 </div>
 
-                
+
                 </p>
 
 
 
-              
+
 
 
             </div> <!--End of intro content-->
-           
+
         </div> <!--End of section 2-->
 
 
@@ -369,7 +404,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div class="introContent words"> <!--Start of intro content-->
 
                 <p class="w3-left w3-row">
-                <div class="w3-col l7 m12"> <!--Start of column 1-->
+                <div class="w3-col l7 m12 s12"> <!--Start of column 1-->
                     <h4><b>Graduation homepage</b></h4>
 
                     <ul>
@@ -438,7 +473,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                 </div> <!--End of column 1-->
 
-                <div class="w3-col l5 m12 "> <!--Start of column 2-->
+                <div class="w3-col l5 m12 s12"> <!--Start of column 2-->
                     <p>
 
                     <div class="w3-content w3-display-container content w3-center w3-left">
@@ -579,7 +614,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <ul>
                                     <li>Even though the secondary nav is present it gets hidden within the hero image
                                     </li>
-                                    <li>There are a lot of different components which makes it difficult to ascertain the
+                                    <li>There are a lot of different components which makes it difficult to ascertain
+                                        the
                                         importance of each</li>
                                     <li>Lack of navigation on mobile to return back to the main landing page</li>
                                 </ul>
@@ -763,7 +799,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
                 <p class="w3-left w3-row"> <!--Start of 1st row-->
-                <div class="w3-col l3 m12 w3-padding"> <!--Start of 1st column-->
+                <div class="w3-col l3 m12 s12 w3-padding"> <!--Start of 1st column-->
                     <h3><b>Key takeaways</b></h3>
 
                     <ul>
@@ -778,7 +814,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <br>
 
                     <div class="w3-container">
-                        <div class="w3-panel w3-border w3-round-large w3-leftbar w3-border-yellow" style="background-color: #fff0b5;">
+                        <div class="w3-panel w3-border w3-round-large w3-leftbar w3-border-yellow"
+                            style="background-color: #fff0b5;">
                             <h3><b>Frustrations identified</b></h3>
 
                             <ul>
@@ -796,7 +833,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                 </div> <!--End of 1st column-->
 
-                <div class="w3-col l9 m12 w3-padding"> <!--Start of 2nd column-->
+                <div class="w3-col l9 m12 s12 w3-padding"> <!--Start of 2nd column-->
                     <div class="w3-container w3-center">
                         <img src="/graduationUoN/surveyResults.jpg" style="width: 100%; height: 100%; ">
                         <br>
@@ -925,15 +962,15 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
 
-                
+
 
                 <div class="w3-col l9  w3-padding"> <!--Start of 2nd column-->
                     <img src="/graduationUoN/oldflow.jpg" style="width: 100%; height: auto; ">
                 </div> <!--End of second column-->
                 </p> <!--End of 1st row-->
-                
 
-                
+
+
 
                 <div class="introContent w3-col l12 m12"> <!--Start of second level intro content-->
                     <h4><b>Proposed journeys</b></h4>
@@ -980,7 +1017,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                     </div>
 
                     <div class="w3-container">
-                        <div class="w3-panel w3-border w3-round-large w3-leftbar w3-border-yellow" style="background-color: #fff0b5;">
+                        <div class="w3-panel w3-border w3-round-large w3-leftbar w3-border-yellow"
+                            style="background-color: #fff0b5;">
                             <h3><b>Stakeholder feedback</b></h3>
                             <p>Stakeholders went ahead with journey one with some incorporations from journey 2</p>
 
@@ -1035,7 +1073,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                         </div>
 
                         <div class="w3-container">
-                            <div class="w3-panel w3-border w3-round-xxlarge w3-leftbar w3-border-yellow" style="background-color: #fff0b5;">
+                            <div class="w3-panel w3-border w3-round-xxlarge w3-leftbar w3-border-yellow"
+                                style="background-color: #fff0b5;">
                                 <h3><b>Stakeholder feedback</b></h3>
 
 
@@ -1077,7 +1116,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                         </div>
 
                         <div class="w3-container">
-                            <div class="w3-panel w3-border w3-round-xxlarge w3-leftbar w3-border-yellow" style="background-color: #fff0b5;">
+                            <div class="w3-panel w3-border w3-round-xxlarge w3-leftbar w3-border-yellow"
+                                style="background-color: #fff0b5;">
                                 <h3><b>Stakeholder feedback</b></h3>
 
 
@@ -1174,7 +1214,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </p>
 
                 <div class="w3-container">
-                    <div class="w3-panel w3-border w3-round-large w3-leftbar w3-border-yellow" style="background-color: #fff0b5;">
+                    <div class="w3-panel w3-border w3-round-large w3-leftbar w3-border-yellow"
+                        style="background-color: #fff0b5;">
                         <h3><b>Points to think upon</b></h3>
 
 
@@ -1302,9 +1343,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 
             <h2 class="words"><b>Challenges and learnings <br><br></b></h2>
 
-            <div class="introContent words challengeCardsrightpadding w3-responsive"> <!--Start of intro content-->
+            <div class="introContent words challengeCardsrightpadding "> <!--Start of intro content-->
                 <div class="w3-row "> <!--Start of row-->
-                    <div class="w3-third w3-card-2">
+                    <div class="w3-col l4 m12 w3-card-2">
 
                         <header class="w3-container" style="margin:16px; background-color: rgb(0,57,137); ">
                             <h3 style="color: #ffffff;">Stakeholder management</h3>
@@ -1328,7 +1369,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                     </div>
 
-                    <div class="w3-third w3-card-2">
+                    <div class="w3-col l4 m12 w3-card-2">
 
                         <header class="w3-container" style="margin:16px; background-color: rgb(0,57,137); ">
                             <h3 style="color: #ffffff;">Navigation</h3>
@@ -1350,7 +1391,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                     </div>
 
-                    <div class="w3-third w3-card-2">
+                    <div class="w3-col l4 m12 w3-card-2">
 
                         <header class="w3-container  " style="margin:16px; background-color: rgb(0,57,137); ">
                             <h3 style="color: #ffffff;">Handling off season graduation </h3>
@@ -1455,16 +1496,16 @@ and is wrapped around the whole page content, except for the footer in this exam
             <a href="mailto: zuha13k@gmail.com"> <i class="fa fa-envelope-open"
                     style="font-size:34px;  margin: 10px;"></i></a>
 
-            <a href="https://www.linkedin.com/in/zuha13k/" target="_blank"><i
-                    style="font-size:35px; margin: 10px;" class="fa">&#xf08c;</i></a>
+            <a href="https://www.linkedin.com/in/zuha13k/" target="_blank"><i style="font-size:35px; margin: 10px;"
+                    class="fa">&#xf08c;</i></a>
 
 
-            <a href="https://www.github.com/zuha1311" target="_blank"> <i
-                    style="font-size:35px;margin: 10px;" class="fa">&#xf09b;</i></a>
+            <a href="https://www.github.com/zuha1311" target="_blank"> <i style="font-size:35px;margin: 10px;"
+                    class="fa">&#xf09b;</i></a>
 
         </div>
-        <p style="font-family: 'Poppins',sans-serif;">Copyright <i class="fa fa-copyright"
-                style="font-size: 20px;"></i> 2023 <br> All rights reserved to Zuha Khan </p>
+        <p style="font-family: 'Poppins',sans-serif;">Copyright <i class="fa fa-copyright" style="font-size: 20px;"></i>
+            2023 <br> All rights reserved to Zuha Khan </p>
     </footer>
 
 
