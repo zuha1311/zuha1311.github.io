@@ -68,11 +68,7 @@
             height: 100%;
         }
 
-        .statsBar {
-            background: rgb(255, 150, 191);
-            background: linear-gradient(90deg, rgba(255, 150, 191, 1) 0%, rgba(253, 217, 124, 1) 22%, rgba(251, 253, 170, 1) 34%, rgba(193, 240, 178, 1) 55%, rgba(178, 228, 240, 1) 77%, rgba(211, 153, 252, 1) 100%);
-        }
-
+      
 
 
 
@@ -111,6 +107,8 @@
 
         }
 
+
+
         .mySlides {
             display: none;
         }
@@ -138,6 +136,32 @@
         .navbar {
             color: #000000;
             background-color: #ffffff;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .contentSideBar {
+                display: none;
+            }
+
+            .content {
+                margin-left: 15px;
+            }
+
+            .words {
+                margin-left: 15px;
+            }
+
+            .challengeCards {
+                height: auto
+            }
+
+            .textpadding {
+                padding-right: 15px;
+            }
+
+            .challengeCardsrightpadding {
+                padding-right: 15px;
+            }
         }
     </style>
 </head>
@@ -345,7 +369,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div class="introContent words"> <!--Start of intro content-->
 
                 <p class="w3-left w3-row">
-                <div class="w3-col m5"> <!--Start of column 1-->
+                <div class="w3-col l7 m12"> <!--Start of column 1-->
                     <h4><b>Graduation homepage</b></h4>
 
                     <ul>
@@ -414,7 +438,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                 </div> <!--End of column 1-->
 
-                <div class="w3-col m5 "> <!--Start of column 2-->
+                <div class="w3-col l5 m12 "> <!--Start of column 2-->
                     <p>
 
                     <div class="w3-content w3-display-container content w3-center w3-left">
@@ -739,7 +763,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
                 <p class="w3-left w3-row"> <!--Start of 1st row-->
-                <div class="w3-col m3 w3-padding"> <!--Start of 1st column-->
+                <div class="w3-col l3 m12 w3-padding"> <!--Start of 1st column-->
                     <h3><b>Key takeaways</b></h3>
 
                     <ul>
@@ -772,7 +796,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                 </div> <!--End of 1st column-->
 
-                <div class="w3-col m9 w3-padding"> <!--Start of 2nd column-->
+                <div class="w3-col l9 m12 w3-padding"> <!--Start of 2nd column-->
                     <div class="w3-container w3-center">
                         <img src="/graduationUoN/surveyResults.jpg" style="width: 100%; height: 100%; ">
                         <br>
@@ -885,7 +909,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </p>
 
                 <p class="w3-left w3-row"> <!--Start of 1st row-->
-                <div class="w3-col m3 "> <!--Start of 1st column-->
+                <div class="w3-col l3 m12 "> <!--Start of 1st column-->
                     <h4><b>Old site structure</b></h4>
 
                     <ul>
@@ -903,15 +927,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                 
 
-                <div class="w3-col m9 w3-padding"> <!--Start of 2nd column-->
+                <div class="w3-col l9  w3-padding"> <!--Start of 2nd column-->
                     <img src="/graduationUoN/oldflow.jpg" style="width: 100%; height: auto; ">
                 </div> <!--End of second column-->
                 </p> <!--End of 1st row-->
                 
 
-                <h4><b>Proposed journeys</b></h4>
+                
 
-                <div class="introContent"> <!--Start of second level intro content-->
+                <div class="introContent w3-col l12 m12"> <!--Start of second level intro content-->
+                    <h4><b>Proposed journeys</b></h4>
                     <p>Based on the above findings, we wanted to propose two different journeys the user can opt for to
                         the stakeholders. Journey one can be classified as the ideal approach whereas journey two can be
                         considered as a backup approach. <br> <br>
@@ -974,7 +999,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                     </div>
                     <h4><b>Proposed Secondary navigation</b></h4>
                     <p class="w3-row">
-                    <div class="w3-col m6 ">
+                    <div class="w3-col l6 ">
 
                         <h5><b>Option 1</b></h5>
 
@@ -1023,14 +1048,14 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                     </div> <!--w3-col ,6 div-->
 
-                    <div class="w3-col m6 w3-padding">
+                    <div class="w3-col m12 l6 w3-padding">
                         <img src="/graduationUoN/navbar1.jpg" style="width: 100%; height: auto; ">
                         <br><br>
                     </div>
 
 
                     <p class="w3-row">
-                    <div class="w3-col m6 ">
+                    <div class="w3-col l6 ">
 
                         <h5><b>Option 2</b></h5>
                         <p>Grouping both graduations inside one dropdown</p>
@@ -1072,7 +1097,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                     </div> <!--w3-col ,6 div-->
 
-                    <div class="w3-col m6 w3-padding">
+                    <div class="w3-col m12 l6 w3-padding">
 
                         <img src="/graduationUoN/navbar2.jpg" style="width: 100%; height: auto; ">
 
@@ -1081,7 +1106,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
                     <p class="w3-row"> <!--Start of row-->
-                    <div class="w3-col m6"> <!--Start of 1st column-->
+                    <div class="w3-col l6"> <!--Start of 1st column-->
                         <br><br><br>
 
                         <h3><b>THE CHOSEN ONE!</b></h3>
@@ -1109,7 +1134,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                     </div> <!--End of first column-->
 
-                    <div class="w3-col m6 w3-padding"> <!--Start of second column-->
+                    <div class="w3-col l6 w3-padding"> <!--Start of second column-->
                         <br>
                         <br>
                         <br>
@@ -1169,7 +1194,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
 
                 <div class="w3-container w3-center ">
-                    <img src="/graduationUoN/wireframe1.jpg" style="width: 100%; height: auto; ">
+                    <img src="/graduationUoN/graduationw1.jpg" style="width: 100%; height: auto; ">
 
 
 
@@ -1185,7 +1210,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </p>
 
                 <div class="w3-container w3-center ">
-                    <img src="/graduationUoN/wireframe2.jpg" style="width: 100%; height: auto; ">
+                    <img src="/graduationUoN/graduationw2.jpg" style="width: 100%; height: auto; ">
                     <br>
                     <br>
 
@@ -1277,8 +1302,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 
             <h2 class="words"><b>Challenges and learnings <br><br></b></h2>
 
-            <div class="introContent words challengeCardsrightpadding"> <!--Start of intro content-->
-                <div class="w3-row w3-mobile"> <!--Start of row-->
+            <div class="introContent words challengeCardsrightpadding w3-responsive"> <!--Start of intro content-->
+                <div class="w3-row "> <!--Start of row-->
                     <div class="w3-third w3-card-2">
 
                         <header class="w3-container" style="margin:16px; background-color: rgb(0,57,137); ">
