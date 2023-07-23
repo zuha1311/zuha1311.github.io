@@ -53,6 +53,24 @@
             padding: 16px;
         }
 
+        /* Animation for stats */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animateStats {
+            animation: slideIn 1s ease-in-out;
+        }
+
+
         .statsBar {
 
             background: #ffffff;
@@ -82,6 +100,14 @@
 
             }
         }
+
+        /* @media screen and (max-width: 768px) { //need to solve this
+           .mobileButton {
+                margin-top: 10px;
+                display: block;
+                margin-right: 0;
+            }
+        } */
 
         @media screen and (min-width: 701px) {
             .contentPadding {
@@ -185,8 +211,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-content" style="max-width:1400px"></div>
 
     <!-- Header -->
-    <header class="w3-display-container w3-mobile w3-responsive bannerPadding"
-        style="height: 100vh; position: relative;">
+    <header class="w3-display-container w3-mobile w3-responsive bannerPadding">
 
 
 
@@ -209,23 +234,23 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                 <div class=" w3-row w3-center w3-padding-64 statsBar"
                     style="background-color: rgba(255, 255, 255, 0.2);">
-                    <div class="w3-quarter">
+                    <div class="w3-quarter animateStats">
                         <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444; "><i
                                 class="fa fa-history"></i><br><b style="color: rgb(255, 70, 101);">2+</b></span>
                         <br>Years of UX experience
                     </div>
-                    <div class="w3-quarter">
+                    <div class="w3-quarter animateStats">
                         <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
                                 class="fa fa-calendar-check-o"></i><br><b
                                 style="color: rgb(255, 70, 101);">10+</b></span>
                         <br>Successfully completed UX projects
                     </div>
-                    <div class="w3-quarter">
+                    <div class="w3-quarter animateStats">
                         <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
                                 class="fa fa-thumbs-o-up"></i><br><b style="color: rgb(255, 70, 101);">30+</b></span>
                         <br>Happy stakeholders
                     </div>
-                    <div class="w3-quarter">
+                    <div class="w3-quarter animateStats">
                         <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
                                 class="fa fa-pencil-square-o"></i><br><b
                                 style="color: rgb(255, 70, 101);">100+</b></span>
@@ -234,7 +259,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
 
                 <br>
-                <h5 class="w3-xlarge w3-hover-opacity" style="color:rgba(255, 70, 101, 0.828)"><a href="#work"
+                <h5 class="w3-xlarge w3-hover-opacity" style="color:rgba(255, 70, 101, 0.828)"><a href="/indexCopy.html"
                         style="text-decoration: none;">
                         Check out my work below <i class="fa fa-chevron-down" aria-hidden="true"></i></a></h5>
 
@@ -497,17 +522,21 @@ and is wrapped around the whole page content, except for the footer in this exam
                         I started my design career by joining the University of Nottingham as their UI/UX Designer and
                         am supporting the web team to produce clean, high-functioning digital components for web and
                         mobile platforms.<br> <br>
+                        Alongside growing my career at the University, I also volunteer with Bridges for Enterprise, a
+                        Cambridge based startup and assist them on various UX/UI projects.
 
 
 
-                    <p class="words  " style="padding-bottom: 20px; "><a href="/Zuha_Khan_UX_Resume.docx"
-                            target="_blank"
-                            class="w3-button w3-left button w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round"><b>Read
+                    <p class="words" style="padding-bottom: 20px; ">
+
+                        <a href="/Zuha_Khan_UX_Resume.docx" target="_blank"
+                            class="w3-button w3-left button w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round mobileButton"
+                            style="margin-right: 10px;"><b>Read
                                 my CV
                                 » </b> </a>
 
                         <a href="mailto:zuha.khan@nottingham.ac.uk"
-                            class="w3-button button w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round"><b>Contact
+                            class="w3-button button w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round mobileButton"><b>Contact
                                 me
                                 » </b> </a>
 
