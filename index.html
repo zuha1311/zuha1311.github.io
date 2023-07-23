@@ -93,6 +93,10 @@
                 padding-right: 16px;
             }
 
+            .contentCardPadding{
+                padding-bottom: 20px;
+            }
+
             .bannerPadding {
                 padding-left: 64px;
                 padding-right: 64px;
@@ -113,13 +117,23 @@
             .contentPadding {
                 padding-left: 100px;
                 padding-right: 100px;
+                
 
+            }
+
+            .contentCardPadding{
+                padding-bottom: 100px;
             }
 
             .bannerPadding {
                 padding: 64px;
 
             }
+
+            .fixedSizeImage{
+            max-width: 500px;
+            max-height: 400px;
+        }
         }
 
         .name {
@@ -142,17 +156,53 @@
             background-color: #ffffff;
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
+        @media screen and (min-width: 768px) and (max-width: 1024px) { /*ipad portrait*/
             .contentPadding {
                 padding-left: 50px;
                 padding-right: 50px;
             }
+
+
+            .fixedSizeImage{
+            max-width: 350px;
+            max-height: 250px;
+            }
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { /*ipad landscape*/
             .contentPadding {
                 padding-left: 20px;
                 padding-right: 20px;
+            }
+
+            .fixedSizeImage{
+            max-width: 500px;
+            max-height: 400px;
+            }
+        }
+
+
+        .project-card {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            
+        }
+
+       
+
+        @media screen and (max-width: 767px) { /*mobile*/
+            .project-card {
+                
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .fixedSizeImage{
+            max-width: 350px;
+            max-height: 250px;
+            width: 100%;
             }
         }
     </style>
@@ -173,7 +223,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <a href="#home" class="w3-bar-item w3-button w3-wide w3-white">ZK</a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small w3-">
-                <a href="/projects.html" class="w3-bar-item w3-button"><i class="fa fa-fw fa-user-secret"></i>WORK</a>
+                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-fw fa-user-secret"></i>WORK</a>
                 <a href="/about.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
                 <a href="/Zuha_Khan_UX_Resume.pdf" target="_blank" class="w3-bar-item w3-button"><i
                         class="fa fa-fw fa-vcard"></i> CV</a>
@@ -196,7 +246,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
-        <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button"><i
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button"><i
                 class="fa fa-fw fa-user-secret"></i>WORK</a>
         <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
         <a href="/Zuha_Khan_UX_Resume.pdf" target="_blank" class="w3-bar-item w3-button"><i
@@ -208,410 +258,155 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     </nav>
 
-    <div class="w3-content" style="max-width:1400px"></div>
+    <div class="w3-content" style="max-width:1400px">
 
-    <!-- Header -->
-    <header class="w3-display-container w3-mobile w3-responsive bannerPadding">
-
-
-
-        <div class="w3-center nameText w3-padding-64 w3-mobile w3-responsive">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <!-- <img src="bg6.jpg" style="height: 100%; width: 100%; object-fit: cover; opacity: 0.4;"> -->
-            </div>
-
-            <div style="position: relative;">
-                <h1 class="w3-xxxlarge">Hey there <b>I'm Zuha</b></h1>
-                <h3>A UX/UI Designer at the <span style="color: rgb(255, 70, 101);"><b>University of
-                            Nottingham</b></span><br>aiming to build people-centered products one project at a time.
-                </h3>
+        <!-- Header -->
+        <header class="w3-display-container w3-mobile w3-responsive bannerPadding">
 
 
 
-
-
-                <!-- Promo Section "Statistics" -->
-
-                <div class=" w3-row w3-center w3-padding-64 statsBar"
-                    style="background-color: rgba(255, 255, 255, 0.2);">
-                    <div class="w3-quarter animateStats">
-                        <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444; "><i
-                                class="fa fa-history"></i><br><b style="color: rgb(255, 70, 101);">2+</b></span>
-                        <br>Years of UX experience
-                    </div>
-                    <div class="w3-quarter animateStats">
-                        <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
-                                class="fa fa-calendar-check-o"></i><br><b
-                                style="color: rgb(255, 70, 101);">10+</b></span>
-                        <br>Successfully completed UX projects
-                    </div>
-                    <div class="w3-quarter animateStats">
-                        <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
-                                class="fa fa-thumbs-o-up"></i><br><b style="color: rgb(255, 70, 101);">30+</b></span>
-                        <br>Happy stakeholders
-                    </div>
-                    <div class="w3-quarter animateStats">
-                        <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
-                                class="fa fa-pencil-square-o"></i><br><b
-                                style="color: rgb(255, 70, 101);">100+</b></span>
-                        <br>Hours of user testing and research
-                    </div>
+            <div class="w3-center nameText w3-padding-64 w3-mobile w3-responsive">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                    <!-- <img src="bg6.jpg" style="height: 100%; width: 100%; object-fit: cover; opacity: 0.4;"> -->
                 </div>
 
-                <br>
-                <h5 class="w3-xlarge w3-hover-opacity" style="color:rgba(255, 70, 101, 0.828)"><a href="/indexCopy.html"
-                        style="text-decoration: none;">
-                        Check out my work below <i class="fa fa-chevron-down" aria-hidden="true"></i></a></h5>
-
-            </div>
-        </div>
-
-
-
-    </header>
+                <div style="position: relative;">
+                    <h1 class="w3-xxxlarge">Hey there <b>I'm Zuha</b></h1>
+                    <h3>A UX/UI Designer at the <span style="color: rgb(255, 70, 101);"><b>University of
+                                Nottingham</b></span><br>aiming to build people-centered products one project at a time.
+                    </h3>
 
 
 
 
 
+                    <!-- Promo Section "Statistics" -->
 
-
-    <!-- Grid -->
-    <div class="w3-row contentPadding" id="work">
-
-        <!-- Blog entries -->
-
-        <div class="w3-col l8 m12 s12">
-            <div class="w3-card-4 w3-margin w3-white  w3-round-large">
-
-                <div class="w3-container w3-half">
-
-                    <a href="/graduationUoN/graduation.html" target="_parent" style="text-decoration: none;"
-                        class="w3-hover-opacity">
-                        <h3><b>Graduation at UoN</b></h3>
-                    </a>
-
-                    <h5 style="color: rgba(68, 68, 68, 0.666);">Seasonal queries reduced by 87%</h5>
-
-                </div>
-
-                <!-- <div class="w3-container w3-half" style="background: rgb(129, 139, 250); ">
-                    <p style="color: rgb(129, 139, 250);">.<br>. <br>.</p>
-               </div> -->
-
-                <div class="w3-row-padding">
-                    <div class="w3-container w3-half">
-                        <p>
-                            The objective of this UX redesign project is to deliver a seamless user experience for
-                            Graduation 2023 and improve website navigation. To achieve this, I conducted competitor
-                            research and 1-1 semi-structured interviews with current and potential users to develop user
-                            personas and make UX design decisions based on data and findings. The end result will be a
-                            redesigned website that prioritizes user-friendly navigation and easy access to key
-                            information, providing a seamless and engaging user experience.
-
-
-
-
-                        </p>
-                    </div>
-
-                    <div class="w3-container w3-center w3-half">
-                        <a href="/graduationUoN/graduation.html" target="_parent" class="w3-hover-opacity">
-                            <img src="/graduationUoN/ graduationMockup.png" alt="Nature"
-                                style="width:100%; max-width:500px ;height:auto; padding: 10px;"> </a>
-
-                    </div>
-
-
-
-                    <div class="w3-row-padding">
-
-                        <h5 style="font-weight: bold;">Skills applied</h5>
-
-                        <p> <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">1-1 Interviews</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Stakeholder management</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Usability testing</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">User personas</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Team
-                                collaboration</span>
-
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Google Analytics &
-                                Hotjar</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Wireframes</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Surveys</span>
-
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Affinity mapping</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Sketching</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Figma</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Project management</span>
-
-
-                        </p>
-
-
-                    </div>
-
-
-                    <div class="w3-row-padding">
-                        <div class="w3-col m8 s12">
-                            <p><button
-                                    class="w3-button w3-padding-large button w3-hover-light-gray w3-border w3-round"><b><a
-                                            href="/graduationUoN/graduation.html" style="text-decoration: none; "> Read
-                                            more » </a></b></button>
-                            </p>
+                    <div class=" w3-row w3-center w3-padding-64 statsBar"
+                        style="background-color: rgba(255, 255, 255, 0.2);">
+                        <div class="w3-quarter animateStats">
+                            <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444; "><i
+                                    class="fa fa-history"></i><br><b style="color: rgb(255, 70, 101);">2+</b></span>
+                            <br>Years of UX experience
                         </div>
-
-                    </div>
-                </div>
-
-
-
-            </div>
-            <hr>
-            <!-- Blog entry -->
-            <div class="w3-card-4 w3-margin w3-white w3-round-large">
-
-                <div class="w3-container">
-                    <a href="/bloodbank/bloodbank.html" target="_parent" style="text-decoration: none;"
-                        class="w3-hover-opacity">
-                        <h3><b>BloodLink</b></h3>
-                    </a>
-                    <h5 style="color: rgba(68, 68, 68, 0.666);">7% increase in monthly blood donations in 3 months</h5>
-
-                </div>
-
-                <div class="w3-row-padding">
-                    <div class="w3-container w3-half">
-                        <p>
-                            Static donor information based on registered contact details often leads
-                            to inaccurate location information, causing delays in blood donation. To address this issue,
-                            a real-time blood donor-locating app can be designed to provide a user-friendly interface
-                            that allows hospitals and patients to locate nearby donors efficiently. The app should
-                            enable users to specify blood groups and receive a list of nearby volunteers with compatible
-                            blood types. To improve the user experience, the app could incorporate periodic geo-location
-                            updates from the volunteer's mobile device, ensuring quick and efficient blood donation.
-                            Additionally, the app should maintain user privacy, ensuring that sensitive data is secure.
-
-
-                        </p>
-
-
-
-                    </div> <!--end of first w3-half-->
-
-                    <div class="w3-container w3-half w3-center">
-                        <a href="/bloodbank/bloodbank.html" target="_parent" class="w3-hover-opacity">
-                            <img src="/bloodbank/bloodbank.png" alt="Nature"
-                                style="width:100%; max-width:500px ;height:auto; padding: 10px;"> </a>
-
-
-                    </div>
-
-                    <div class="w3-row-padding">
-
-                        <h5 style="font-weight: bold;">Skills applied</h5>
-
-
-                        <p> <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Competitor Analysis</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">User interviews</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Usability testing</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Surveys</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Sketching</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Figma</span>
-
-                        </p>
-
-
-
-                    </div>
-
-                    <div class="w3-row-padding">
-                        <div class="w3-col m8 s12">
-                            <p><button
-                                    class="w3-button w3-padding-large button w3-hover-light-gray w3-border w3-round"><b><a
-                                            href="/bloodbank/bloodbank.html" style="text-decoration: none; "> Read
-                                            more » </a></b></button>
-                            </p>
+                        <div class="w3-quarter animateStats">
+                            <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
+                                    class="fa fa-calendar-check-o"></i><br><b
+                                    style="color: rgb(255, 70, 101);">10+</b></span>
+                            <br>Successfully completed UX projects
                         </div>
-
+                        <div class="w3-quarter animateStats">
+                            <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
+                                    class="fa fa-thumbs-o-up"></i><br><b
+                                    style="color: rgb(255, 70, 101);">30+</b></span>
+                            <br>Happy stakeholders
+                        </div>
+                        <div class="w3-quarter animateStats">
+                            <span class="w3-xxlarge" style="text-shadow:1px 1px 0 #444"><i
+                                    class="fa fa-pencil-square-o"></i><br><b
+                                    style="color: rgb(255, 70, 101);">100+</b></span>
+                            <br>Hours of user testing and research
+                        </div>
                     </div>
+
+                    <br>
+                    <h5><button
+                            class="w3-button w3-padding-large button w3-hover-light-gray w3-border w3-round w3-large"
+                            style="color:rgba(255, 70, 101, 0.828)"><a href="#work" style="text-decoration: none;">
+                                See my magic below <i class="fa fa-chevron-down" aria-hidden="true"></i></a></button>
+                    </h5>
+
+
+
+
                 </div>
-
-
             </div>
-            <hr>
-
-            <!-- Blog entry -->
-            <div class="w3-card-4 w3-margin w3-white w3-round-large">
-
-                <div class="w3-container">
-                    <h3><b><a href="/comingTogether/comingTogether.html" style="text-decoration: none;" target="_parent"
-                                class="w3-hover-opacity"> Coming Together</a></b></h3>
-                    <h5 style="color: rgba(68, 68, 68, 0.666);">12% increase in MAU</h5>
-
-                </div>
-
-                <div class="w3-row-padding">
-                    <div class="w3-container w3-half">
-                        <p>
-                            The client has expressed several requirements for their website, including making it more
-                            interactive for visitors, proposing suggestions for improved traceability and searchability
-                            on social media, and making the website richer in material. These requirements suggest a
-                            desire for a user-friendly and engaging website that can be easily accessed and shared
-                            across various platforms.
-                        </p>
-                    </div>
-
-                    <div class="w3-container w3-half w3-center"> <a href="/comingTogether/comingTogether.html"
-                            style="text-decoration: none;" target="_parent" class="w3-hover-opacity">
-                            <img src="/comingTogether/ctbanner.png" alt="Nature"
-                                style="width:100%;  ;height:auto; padding: 20px;"> </a>
-
-                    </div>
-
-                    <div class="w3-row-padding">
-
-                        <h5 style="font-weight: bold;">Skills applied</h5>
 
 
-                        <p> <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">1-1 Interviews</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Stakeholder management</span>
 
+        </header>
+
+        <!-- Grid -->
+        <div class="contentPadding" id="work">
+
+
+            <div class="w3-container contentCardPadding">
+                <div class="w3-card-2 w3-animate-right project-card w3-round-xlarge"  >
+                    <img src="graduationUoN/ graduationMockup.png"  alt="" class="fixedSizeImage w3-round-xlarge" style="background-size: cover;" >
+                    <div class="w3-container">
+                        <h3 style="color: darkblue;">Graduation at Univeristy of Nottingham</h3><br>
+                        <h1 style="color: darkblue;"><b>Reduced seasonal queries by 87% within 4 months</b></h1>
+
+                        <p> <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Usability testing</span>
                             <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Google Analytics</span>
+                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">A/B Testing</span>
                             <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Wireframes</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Surveys</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">User personas</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Leadership</span>
-
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Affinity mapping</span>
-                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Sketching</span>
+                        
+                        
+                        </p> <br>
 
 
-                        </p>
-
-
-                    </div>
-
-                    <div class="w3-row-padding">
-                        <div class="w3-col m8 s12">
-                            <p> <a href="/comingTogether/comingTogether.html" style="text-decoration: none;"
-                                    target="_parent" class="w3-hover-opacity"> <button
-                                        class="w3-button w3-padding-large button w3-hover-light-gray w3-border w3-round"><b>Read
-                                            more »</b></button> </a>
-                            </p>
-                        </div>
-
+                        <h5><button class="w3-button w3-padding-large button w3-hover-light-gray w3-border w3-round"
+                                style="color:rgba(255, 70, 101, 0.828)"><a href="/graduationUoN/graduation.html" style="text-decoration: none;">
+                                    Find out more <i class="fa fa-chevron-right" aria-hidden="true"></i></a></button>
+                        </h5>
                     </div>
                 </div>
-
-
             </div>
-            <hr>
-
-
-            <!-- END BLOG ENTRIES -->
-        </div>
-        <div class="w3-col l4" id="about">
-            <!-- About Card -->
-            <div class="w3-card w3-margin w3-margin-top w3-container w3-white w3-round-large">
-                <h4><b>About me</b></h4>
-                <img src="/homepageImages/about.jpg" style="width:100%">
-                <div class=" w3-white">
-
-                    <p>
-                        I started my design career by joining the University of Nottingham as their UI/UX Designer and
-                        am supporting the web team to produce clean, high-functioning digital components for web and
-                        mobile platforms.<br> <br>
-                        Alongside growing my career at the University, I also volunteer with Bridges for Enterprise, a
-                        Cambridge based startup and assist them on various UX/UI projects.
 
 
 
-                    <p class="words" style="padding-bottom: 20px; ">
-
-                        <a href="/Zuha_Khan_UX_Resume.docx" target="_blank"
-                            class="w3-button w3-left button w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round mobileButton"
-                            style="margin-right: 10px;"><b>Read
-                                my CV
-                                » </b> </a>
-
-                        <a href="mailto:zuha.khan@nottingham.ac.uk"
-                            class="w3-button button w3-hover-light-gray w3-padding-large w3-medium w3-display-inline-block w3-border w3-round mobileButton"><b>Contact
-                                me
-                                » </b> </a>
-
-                    </p>
-
+            <div class="w3-container contentCardPadding">
+                <div class="w3-card-2 w3-animate-left project-card  w3-round-xlarge" >
+                    <div class="w3-container">
+                      
+                        <h3 style="color: rgb(181, 0, 0);">BloodLink</h3><br>
+                        <h1 style="color:rgb(181, 0, 0);"><b>7% increase in monthly blood donations within 3 months</b></h1> 
+                        
+                        <p> <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Usability testing</span>
+                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Competitor Research</span>
+                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Information Architecture</span>
+                        
+                        
+                        </p> <br>
 
 
+                        <h5><button class="w3-button w3-padding-large button w3-hover-light-gray w3-border w3-round"
+                                style="color:rgba(255, 70, 101, 0.828)"><a href="/bloodbank/bloodbank.html" style="text-decoration: none;">
+                                    Find out more <i class="fa fa-chevron-right" aria-hidden="true"></i></a></button>
+                        </h5>
+                    </div>
 
-
-
+                    <img src="bloodbank/bloodbank.png" alt="" class="fixedSizeImage  w3-round-xlarge" style="background-size: cover;">
+                   
+                   
                 </div>
             </div>
-            <hr>
 
-            <div class="w3-card w3-margin w3-round-large">
-                <div class="w3-container w3-padding">
-                    <h4>Books I recommend</h4>
+
+
+            <div class="w3-container contentCardPadding">
+                <div class="w3-card-2 w3-animate-right project-card w3-round-xlarge"  >
+                    <img src="comingTogether/ctbanner.png"  alt="" class="fixedSizeImage w3-round-xlarge  " style="background-size: cover;" >
+                    <div class="w3-container">
+                        <h3 style="color: rgb(187, 109, 0);">Coming Together</h3><br>
+                        <h1 style="color: rgb(187, 109, 0);"><b>12% increase in MAU and 36% reduction in bounce rate</b></h1>
+
+                        <p> <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">User research</span>
+                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Sketches</span>
+                            <span class="w3-tag w3-light-grey w3-large w3-margin-bottom">Prototyping</span>
+                        
+                        
+                        </p> <br>
+
+
+                        <h5><button class="w3-button w3-padding-large button w3-hover-light-gray w3-border w3-round"
+                                style="color:rgba(255, 70, 101, 0.828)"><a href="/comingTogether/comingTogether.html" style="text-decoration: none;">
+                                    Find out more <i class="fa fa-chevron-right" aria-hidden="true"></i></a></button>
+                        </h5>
+                    </div>
                 </div>
-                <ul class="w3-ul w3-hoverable w3-white">
-
-                    <a href="https://thedecisionlab.com/reference-guide/economics/the-paradox-of-choice" target="_blank"
-                        style="text-decoration: none;">
-                        <li class="w3-padding-16">
-
-
-                            <img src="/homepageImages/paradoxCP.jpeg" alt="Image" class="w3-left w3-margin-right"
-                                style="width:35px;">
-                            <span class="w3-large">The Paradox of Choice</span><br>
-                            <span>Barry Schwartz</span>
-
-
-                        </li>
-                    </a>
-
-                    <a href="https://development-academy.co.uk/news-tips/how-to-win-friends-influence-people-in-8-key-points/"
-                        target="_blank" style="text-decoration: none;">
-                        <li class="w3-padding-16">
-
-                            <img src="/homepageImages/howtowinfriends.jpeg" alt="Image" class="w3-left w3-margin-right"
-                                style="width:35px">
-                            <span class="w3-large">How to win friends and influence people</span><br>
-                            <span>Dale Carnegie</span>
-
-                        </li>
-                    </a>
-
-                    <a href="https://www.samuelthomasdavies.com/book-summaries/psychology/predictably-irrational/"
-                        target="_blank" style="text-decoration: none;">
-                        <li class="w3-padding-16">
-
-                            <img src="/homepageImages/predictablyirrational.jpeg" alt="Image"
-                                class="w3-left w3-margin-right" style="width:35px">
-                            <span class="w3-large">Predictably irrational</span><br>
-                            <span>Dan Ariely</span>
-
-                        </li>
-                    </a>
-
-                    <a href="https://www.amazon.co.uk/Shatter-Me-Tahereh-Mafi/dp/1405291753" target="_blank"
-                        style="text-decoration: none;">
-                        <li class="w3-padding-16">
-
-                            <img src="homepageImages/shatterme.jpeg" alt="Image" class="w3-left w3-margin-right"
-                                style="width:35px">
-                            <span class="w3-large">Shatter me</span><br>
-                            <span>Tahrereh Mafi</span>
-
-                        </li>
-                    </a>
-
-                </ul>
             </div>
-            <hr>
-
-        </div>
 
 
 
@@ -621,11 +416,13 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
 
-        <!-- END GRID -->
-    </div>
 
-    <!-- END w3-content -->
-    </div>
+
+
+        </div> <!-- END GRID -->
+
+    </div><!-- END w3-content -->
+
 
     <!-- Footer -->
     <footer class="w3-center w3-padding-64 w3-white">
